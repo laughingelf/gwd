@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <g class="layer">
+  <title>Layer 1</title>
+  <g data-name="Layer 2" id="svg_1">
+   <g data-name="checkmark-circle" id="svg_2">
+    <rect fill="#0db6cc" height="24" id="svg_3" opacity="0" width="24"/>
+    <path d="m9.71,11.29a1,1 0 0 0 -1.42,1.42l3,3a1,1 0 0 0 0.71,0.29a1,1 0 0 0 0.72,-0.34l7,-8a1,1 0 0 0 -1.5,-1.32l-6.22,7.2l-2.29,-2.25z" fill="#0db6cc" id="svg_4"/>
+    <path d="m21,11a1,1 0 0 0 -1,1a8,8 0 0 1 -8,8a8,8 0 0 1 -5.67,-13.64a7.93,7.93 0 0 1 5.67,-2.36a8.79,8.79 0 0 1 1.9,0.22a1,1 0 1 0 0.47,-1.94a10.54,10.54 0 0 0 -2.37,-0.28a10,10 0 0 0 -7,17.09a9.93,9.93 0 0 0 7,2.91a10,10 0 0 0 10,-10a1,1 0 0 0 -1,-1z" fill="#0db6cc" id="svg_5"/>
+   </g>
+  </g>
+ </g>
+</svg>
