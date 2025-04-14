@@ -24,7 +24,7 @@ const LandingPage = () => {
                     </div>
                 </div>
                 <div className="mb-10 lg:mb-0 lg:w-1/2">
-                    <img alt="computer, laptop, tablet, and phone showing beautiful websites" src="/img/landingPageTop.png" className="w-full max-w-md mx-auto"/>
+                    <img alt="computer, laptop, tablet, and phone showing beautiful websites" src="/img/landingpage.svg" className="w-full max-w-md mx-auto"/>
                 </div>
             </div>
             
