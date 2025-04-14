@@ -19,7 +19,7 @@ const Contact = () => {
                             playsInline
                             className="absolute top-0 left-0 w-full h-full object-cover z-0"
                         >
-                            <source src="/img/about-us-bg.mp4" type="video/mp4" />
+                            <source alt="Contact Header" src="/img/about-us-bg.mp4" type="video/mp4" />
                         </video>
                         <h1 className="relative z-10 text-white">Contact Us</h1>
                     </div>
@@ -39,11 +39,11 @@ const Contact = () => {
                         </div>
                         <div>
                             <div className="flex items-center mt-4">
-                                <img className="mr-4 w-10 h-10" src="/img/icons/phone.svg" alt="Phone" />
+                                <img alt="phone icon" className="mr-4 w-10 h-10" src="/img/icons/phone.svg" alt="Phone" />
                                 <a href="tel:9723380991" className="lg:text-3xl sm:text-xl">972-338-0991</a>
                             </div>
                             <div className="flex items-center mt-4">
-                                <img className=" mr-4 w-10 h-10" src="/img/icons/email.svg" alt="Email" />
+                                <img alt="email icon" className=" mr-4 w-10 h-10" src="/img/icons/email.svg" alt="Email" />
                                 <a href="mailto:greylinewdinfo@gmail.com" className="lg:text-3xl sm:text-xl">greylinewdinfo@gmail.com</a>
                             </div>  
                         </div>

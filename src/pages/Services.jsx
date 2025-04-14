@@ -19,7 +19,7 @@ const Services = () => {
                             playsInline
                             className="absolute top-0 left-0 w-full h-full object-cover z-0"
                         >
-                            <source src="/img/about-us-bg.mp4" type="video/mp4" />
+                            <source alt="Wed Design Header" src="/img/about-us-bg.mp4" type="video/mp4" />
                         </video>
                         <h1 className="relative z-10 text-white">Web Design</h1>
                 </div>
@@ -28,7 +28,7 @@ const Services = () => {
                     <div className="w-full lg:w-1/2">
                             <img
                             src="/img/web-work.jpg"
-                            alt="Web work"
+                            alt="GhostStack owner working"
                             className="w-full h-auto rounded-xl shadow-md"
                             />
                     </div>
