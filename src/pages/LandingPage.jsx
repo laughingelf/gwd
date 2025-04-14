@@ -11,7 +11,7 @@ const LandingPage = () => {
         <Navbar/>
         <div>
             <div className="flex justify-center ">
-                <img alt="GhostStack Logo" className="h-90" src="/img/GhostStack360.svg" />
+                <img alt="GhostStack Logo" className="h-90" src="/img/GhostStack360.png" />
             </div>
             <div className="flex flex-col-reverse lg:flex-row items-center mt-2 p-6 lg:p-16">
                 <div className="text-left lg:w-1/2">
@@ -24,7 +24,7 @@ const LandingPage = () => {
                     </div>
                 </div>
                 <div className="mb-10 lg:mb-0 lg:w-1/2">
-                    <img alt="computer, laptop, tablet, and phone showing beautiful websites" src="/img/landingpage.svg" className="w-full max-w-md mx-auto"/>
+                    <img alt="computer, laptop, tablet, and phone showing beautiful websites" src="/img/landingpage.png" className="w-full max-w-md mx-auto"/>
                 </div>
             </div>
             
