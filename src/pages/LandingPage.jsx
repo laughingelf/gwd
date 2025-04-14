@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
+import Website from "../components/Website";
 
 const LandingPage = () => {
 
@@ -10,7 +11,7 @@ const LandingPage = () => {
         <Navbar/>
         <div>
             <div className="flex justify-center ">
-                <img className="h-72" src="/img/gwd-logo4.svg" />
+                <img className="h-90" src="/img/ghostStack.svg" />
             </div>
             <div className="flex flex-col-reverse lg:flex-row items-center mt-2 p-6 lg:p-16">
                 <div className="text-left lg:w-1/2">
@@ -18,8 +19,8 @@ const LandingPage = () => {
                     <h1 id='big-text' className="text-4xl sm:text-5xl lg:text-6xl mb-6 sm:mb-8">AFFORDABLE WEB DESIGN FOR SMALL BUSINESS</h1>
                     <h7 className="text-lg sm:text-xl block">We don’t use WordPress or page builders — every site is custom-coded for speed, performance, and results. Plans start at $150/month.</h7>
                     <div className="mt-6 sm:mt-8">
-                        <Link to='/contact' id='get-started-button'>Get Started</Link>
-                        <Link id="about-us-button" className="ml-4 sm:ml-8 inline-block mt-4 sm:mt-0" to='/about'>About Us</Link>
+                        <Link onClick={() => window.scrollTo(0, 0)} to='/contact' id='get-started-button'>Get Started</Link>
+                        <Link onClick={() => window.scrollTo(0, 0)} id="about-us-button" className="ml-4 sm:ml-8 inline-block mt-4 sm:mt-0" to='/about'>About Us</Link>
                     </div>
                 </div>
                 <div className="mb-10 lg:mb-0 lg:w-1/2">
@@ -33,7 +34,7 @@ const LandingPage = () => {
                     NEVER WORRY ABOUT YOUR WEBSITE AGAIN
                 </h1>
                 <h2 className="text-base sm:text-lg md:text-xl sm:px-4 md:px-16 sm:leading-relaxed md:leading-normal">
-                    At Greyline Web Designs, we focus on building high-performance, custom-coded websites for small businesses across the U.S. 
+                    At GhostStack Designs, we focus on building high-performance, custom-coded websites for small businesses across the U.S. 
                     Our goal is to help local companies stay competitive in a world that's shifting more and more toward online shopping. 
                     Every site we create is hand-coded for speed, SEO, and long-term success—no page builders, no shortcuts. We handle updates 
                     for you, so you can focus on running your business. As a growing company ourselves, we're investing in our future by helping 
@@ -46,26 +47,26 @@ const LandingPage = () => {
                     <img className="absolute -top-12 left-4" id="service-card-icon" src="/img/icons/smart-laptop.svg" />
                     <h1>Fully Responsive</h1>
                     <h3>Your website will look sharp and work flawlessly on any device—phones, tablets, or desktops. We make sure your customers get a smooth, professional experience no matter how they find you.</h3>
-                    <Link id="service-card-links" to='/contact'>Get Started</Link>
+                    <Link onClick={() => window.scrollTo(0, 0)} id="service-card-links" to='/contact'>Get Started</Link>
                 </div>
 
                 <div id="service-cards" className="relative w-full sm:w-1/2 md:w-1/3 p-4">
                     <img className="absolute -top-12 left-4" id="service-card-icon" src="/img/icons/speed.svg" />
                     <h1>Optimized Page Speed</h1>
                     <h3>If your website takes more than 3 seconds to load, you could be losing up to 50% of your traffic. Our sites are optimized to load in 1 second or less—making sure your visitors stay and engage, not bounce away.</h3>
-                    <Link id="service-card-links" to='/contact'>Why This Matters</Link>
+                    <Link onClick={() => window.scrollTo(0, 0)} id="service-card-links" to='/contact'>Why This Matters</Link>
                 </div>
 
                 <div id="service-cards" className="relative w-full sm:w-1/2 md:w-1/3 p-4">
                     <img className="absolute -top-12 left-4" id="service-card-icon" src="/img/icons/us-based.svg" />
                     <h1>Based in U.S.</h1>
                     <h3>Proudly based in Texas, we build high-quality websites right here in the U.S. We never outsource to cheap overseas developers—everything is crafted in-house to ensure top-tier quality, performance, and reliability.</h3>
-                    <Link id="service-card-links" to='/contact'>Get Started</Link>
+                    <Link onClick={() => window.scrollTo(0, 0)} id="service-card-links" to='/contact'>Get Started</Link>
                 </div>
             </div>
 
             <div id="get-started-button-bigger" className="mt-12 inline-block">
-                <Link to='/contact'>Call Us Today</Link>
+                <Link onClick={() => window.scrollTo(0, 0)} to='/contact'>Call Us Today</Link>
             </div>
 
             <div className="mt-16 flex flex-wrap items-center px-4 max-w-full overflow-hidden">
@@ -131,7 +132,7 @@ const LandingPage = () => {
 
                     {/* Call to Action Button */}
                     <div className="mt-8 mb-8 text-center sm:text-left">
-                        <Link id="get-started-button" to='/contact' className="px-4 py-2 bg-blue-500 text-white rounded">
+                        <Link onClick={() => window.scrollTo(0, 0)} id="get-started-button" to='/contact' className="px-4 py-2 bg-blue-500 text-white rounded">
                             Call Us Today
                         </Link>
                     </div>
@@ -144,7 +145,7 @@ const LandingPage = () => {
                     <h1 className="text-4xl sm:text-5xl md:text-6xl mb-8 text-center sm:text-left">FOR EVERY BUDGET</h1>
                 </div>
                 <div className="mt-8 w-full sm:w-1/2 lg:w-1/3 flex justify-center sm:justify-start">
-                    <Link id="get-started-button-bigger" to='/contact' className="px-6 py-3 bg-blue-500 text-white rounded text-xl">Get Started</Link>
+                    <Link onClick={() => window.scrollTo(0, 0)} id="get-started-button-bigger" to='/contact' className="px-6 py-3 bg-blue-500 text-white rounded text-xl">Get Started</Link>
                 </div>
             </div>
 
@@ -187,7 +188,7 @@ const LandingPage = () => {
                             <h1 className="mr-2 text-4xl sm:text-5xl">$600</h1>
                             <h3 className="text-sm sm:text-lg">+$25/mo Hosting</h3>
                         </div>
-                        <Link id="get-started-button-glow" to='/contact' className="block text-center mt-4">Get Started</Link>
+                        <Link onClick={() => window.scrollTo(0, 0)} id="get-started-button-glow" to='/contact' className="block text-center mt-4">Get Started</Link>
                     </div>
                 </div>
 
@@ -229,42 +230,12 @@ const LandingPage = () => {
                             <h1 className="mr-2 text-4xl sm:text-5xl">$150</h1>
                             <h3 className="text-sm sm:text-lg">Per Month</h3>
                         </div>
-                        <Link id="get-started-button-glow" to='/contact' className="block text-center mt-4">Get Started</Link>
+                        <Link onClick={() => window.scrollTo(0, 0)} id="get-started-button-glow" to='/contact' className="block text-center mt-4">Get Started</Link>
                     </div>
                 </div>
             </div>
 
-            <div id="lighting-border" className="mt-16 mx-4 sm:mt-32 relative overflow-hidden rounded-xl">
-                <video
-                    id="background-video"
-                    loop
-                    autoPlay
-                    muted
-                    playsInline
-                    className="absolute top-0 left-0 w-full h-full object-cover"
-                >
-                    <source src="/img/get-website-bg2.mp4" type="video/mp4" />
-                </video>
-                <div className="flex flex-col sm:flex-row items-center justify-between border p-8 sm:p-16 rounded-xl relative z-10">
-                    <div className="text-left sm:max-w-md">
-                        <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold leading-tight">
-                            Isn’t It Time You Had the
-                        </h1>
-                        <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold leading-tight">
-                            Website You Deserve?
-                        </h1>
-                    </div>
-                    <div className="mt-4 sm:mt-0">
-                        <Link
-                            id="get-started-button-bigger"
-                            to="/contact"
-                            className="text-lg sm:text-xl bg-blue-500 text-white px-6 py-3 rounded-lg transition duration-300 hover:bg-blue-600"
-                        >
-                            Get Started Today
-                        </Link>
-                    </div>
-                </div>
-            </div>
+            <Website />
 
         </div>
         <Footer/>

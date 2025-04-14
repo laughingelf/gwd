@@ -8,11 +8,11 @@ const Footer = () => {
             {/* Horizontal Line */}
             <hr className="border-t-2 border-white mb-8" />
             <div className="flex flex-wrap justify-between space-y-8 sm:space-y-0">
-                {/* Greyline Web Designs Section */}
+                {/* GhostStack Designs Section */}
                 <div className="w-full sm:w-1/2 lg:w-1/3 ">
                     <div className="flex justify-center">
                         <Link onClick={() => window.scrollTo(0, 0)} to='/home'>
-                            <img className="h-32" alt="Greyline Web Designs Logo" src="/img/gwd-logo4.svg" />
+                            <img className="h-44" alt="GhostStack Designs Logo" src="/img/ghostStack.svg" />
                         </Link>
                     </div>
                     <h3 className="text-lg sm:text-xl mb-8">

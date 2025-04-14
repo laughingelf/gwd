@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
+import Website from "../components/Website";
 
 const Services = () => {
 
@@ -43,7 +44,7 @@ const Services = () => {
                                 Built from Scratch – No Templates, No WordPress
                             </h2>
                             <p className="text-lg text-left md:text-lg leading-relaxed max-w-3xl mx-auto">
-                                At Greyline Web Designs, we don’t cut corners with page builders or WordPress. 
+                                At GhostStack Designs, we don’t cut corners with page builders or WordPress. 
                                 Every site is built from scratch with clean, custom code—no fluff, no bloat. That 
                                 means lightning-fast load times, airtight security, and a design that’s 100% yours. 
                                 No constant plugin updates. No cookie-cutter templates. Just a solid site that 
@@ -131,37 +132,8 @@ const Services = () => {
                         </div>
                     </div>
                 </div>
-                <div id="lighting-border" className="mt-16 sm:mt-32 relative overflow-hidden rounded-xl">
-                    <video
-                        id="background-video"
-                        loop
-                        autoPlay
-                        muted
-                        playsInline
-                        className="absolute top-0 left-0 w-full h-full object-cover"
-                    >
-                        <source src="/img/get-website-bg2.mp4" type="video/mp4" />
-                    </video>
-                    <div className="flex flex-col sm:flex-row items-center justify-between border p-8 sm:p-16 rounded-xl relative z-10">
-                        <div className="text-left sm:max-w-md">
-                            <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold leading-tight">
-                                Isn’t It Time You Had the
-                            </h1>
-                            <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold leading-tight">
-                                Website You Deserve?
-                            </h1>
-                        </div>
-                        <div className="mt-4 sm:mt-0">
-                            <Link
-                                id="get-started-button-bigger"
-                                to="/contact"
-                                className="text-lg sm:text-xl bg-blue-500 text-white px-6 py-3 rounded-lg transition duration-300 hover:bg-blue-600"
-                            >
-                                Get Started Today
-                            </Link>
-                        </div>
-                    </div>
-                </div>
+                
+                <Website />
 
             </div>
         <Footer/>

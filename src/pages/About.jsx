@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Website from "../components/Website";
 import { Link } from "react-router-dom";
 
 const About = () => {
@@ -33,7 +34,7 @@ const About = () => {
                     </div>
 
                     <div className="w-full text-left lg:w-1/2 space-y-6">
-                        <h3 id="bluetext" className="text-xl font-semibold">Greyline Web Designs</h3>
+                        <h3 id="bluetext" className="text-xl font-semibold">GhostStack Designs</h3>
                         <h1 className="text-6xl md:text-5xl font-bold">
                         We Build for the Underdogs of the Online Age
                         </h1>
@@ -43,7 +44,7 @@ const About = () => {
                         Working remotely was a huge bonus—my daughter had just turned one, and being home meant I didn’t miss a second of her growing up.
                         But in 2022, I was laid off and had to pivot careers to keep food on the table. That season pulled me away from what mattered most,
                         and after applying to over 400 tech jobs and only getting two callbacks, I decided to stop waiting for a door to open—and build one
-                        myself. That’s when Greyline Web Designs was born.
+                        myself. That’s when GhostStack Designs was born.
                         </p>
                         <p className="text-lg leading-relaxed">
                         My drive to support small businesses runs deep. I grew up just outside a small country town on a ranch, where we depended on mom-and-pop
@@ -53,7 +54,7 @@ const About = () => {
                         a web design company—it’s a way to give the little guy a fighting chance in a world built for big players. Let’s build something that works
                         just as hard as you do.
                         </p>
-                        <Link id="get-started-button-bigger" to='/contact'>Call Us Today</Link>
+                        <Link onClick={() => window.scrollTo(0, 0)} id="get-started-button-bigger" to='/contact'>Call Us Today</Link>
                     </div>
                 </div>
 
@@ -73,37 +74,8 @@ const About = () => {
                     </div>
                 </div>
 
-                <div id="lighting-border" className="mt-16 sm:mt-32 relative overflow-hidden rounded-xl">
-                    <video
-                        id="background-video"
-                        loop
-                        autoPlay
-                        muted
-                        playsInline
-                        className="absolute top-0 left-0 w-full h-full object-cover"
-                    >
-                        <source src="/img/get-website-bg2.mp4" type="video/mp4" />
-                    </video>
-                    <div className="flex flex-col sm:flex-row items-center justify-between border p-8 sm:p-16 rounded-xl relative z-10">
-                        <div className="text-left sm:max-w-md">
-                            <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold leading-tight">
-                                Isn’t It Time You Had the
-                            </h1>
-                            <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold leading-tight">
-                                Website You Deserve?
-                            </h1>
-                        </div>
-                        <div className="mt-4 sm:mt-0">
-                            <Link
-                                id="get-started-button-bigger"
-                                to="/contact"
-                                className="text-lg sm:text-xl bg-blue-500 text-white px-6 py-3 rounded-lg transition duration-300 hover:bg-blue-600"
-                            >
-                                Get Started Today
-                            </Link>
-                        </div>
-                    </div>
-                </div>
+                
+                <Website />
 
 
             </div>

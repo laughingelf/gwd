@@ -11,7 +11,7 @@ const Navbar = () => {
                 {/* Logo */}
                 <div>
                     <Link to='/home' id='nav-link' className='text-xl'>
-                        <img className='h-12' src='/img/gwd-logo4.svg' />
+                        <img className='h-12' src='/img/ghost.svg' />
                     </Link>
                 </div>
 
