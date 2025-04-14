@@ -11,7 +11,7 @@ const LandingPage = () => {
         <Navbar/>
         <div>
             <div className="flex justify-center ">
-                <img alt="GhostStack Logo" className="h-90" src="/img/ghostStack.svg" />
+                <img alt="GhostStack Logo" className="h-90" src="/img/GhostStack360.svg" />
             </div>
             <div className="flex flex-col-reverse lg:flex-row items-center mt-2 p-6 lg:p-16">
                 <div className="text-left lg:w-1/2">
@@ -72,7 +72,7 @@ const LandingPage = () => {
             <div className="mt-16 flex flex-wrap items-center px-4 max-w-full overflow-hidden">
                 {/* Image Section */}
                 <div className="w-full sm:w-1/2 lg:w-1/3 mb-8 sm:mb-0">
-                    <img alt="GhostStack owner working" className="rounded-xl w-full sm:w-3/4 lg:w-full mx-auto sm:mx-0" src="/img/web-work.webp" alt="Web work" />
+                    <img alt="GhostStack owner working" className="rounded-xl w-full sm:w-3/4 lg:w-full mx-auto sm:mx-0" src="/img/web-work.webp" />
                 </div>
 
                 {/* Text and Info Cards Section */}
@@ -91,7 +91,7 @@ const LandingPage = () => {
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-8 text-left">
                         <div id="info-cards" className="p-4 flex flex-col items-center">
                             <div className="w-16 h-16 mb-4">
-                                <img alt="checkmark icon" className="w-full h-full object-contain" src="/img/icons/checkmark.svg" alt="Secure" />
+                                <img className="w-full h-full object-contain" src="/img/icons/checkmark.svg" alt="Secure" />
                             </div>
                             <div>
                                 <h3 className="text-xl underline font-semibold text-center">Secure</h3>
@@ -101,7 +101,7 @@ const LandingPage = () => {
 
                         <div id="info-cards" className="p-4 flex flex-col items-center">
                             <div className="w-16 h-16 mb-4">
-                                <img alt="checkmark icon" className="w-full h-full object-contain" src="/img/icons/checkmark.svg" alt="Custom Coded" />
+                                <img className="w-full h-full object-contain" src="/img/icons/checkmark.svg" alt="Custom Coded" />
                             </div>
                             <div>
                                 <h3 className="text-xl underline font-semibold text-center">Custom Coded</h3>
@@ -111,7 +111,7 @@ const LandingPage = () => {
 
                         <div id="info-cards" className="p-4 flex flex-col items-center">
                             <div className="w-16 h-16 mb-4">
-                                <img alt="checkmark icon" className="w-full h-full object-contain" src="/img/icons/checkmark.svg" alt="Unrivaled Support" />
+                                <img className="w-full h-full object-contain" src="/img/icons/checkmark.svg" alt="Unrivaled Support" />
                             </div>
                             <div>
                                 <h3 className="text-xl underline font-semibold text-center">Unrivaled Support</h3>
@@ -121,7 +121,7 @@ const LandingPage = () => {
 
                         <div id="info-cards" className="p-4 flex flex-col items-center">
                             <div className="w-16 h-16 mb-4">
-                                <img alt="checkmark icon" className="w-full h-full object-contain" src="/img/icons/checkmark.svg" alt="Money Back Guarantee" />
+                                <img className="w-full h-full object-contain" src="/img/icons/checkmark.svg" alt="Money Back Guarantee" />
                             </div>
                             <div>
                                 <h3 className="text-xl underline font-semibold text-center">Money Back Guarantee</h3>
