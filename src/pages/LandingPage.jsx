@@ -54,7 +54,7 @@ const LandingPage = () => {
                     <img alt="speed icon" className="absolute -top-12 left-4" id="service-card-icon" src="/img/icons/speed.svg" />
                     <h1>Optimized Page Speed</h1>
                     <h3>If your website takes more than 3 seconds to load, you could be losing up to 50% of your traffic. Our sites are optimized to load in 1 second or less—making sure your visitors stay and engage, not bounce away.</h3>
-                    <Link onClick={() => window.scrollTo(0, 0)} id="service-card-links" to='/contact'>Why This Matters</Link>
+                    <Link onClick={() => window.scrollTo(0, 0)} id="service-card-links" to='/services'>Why This Matters</Link>
                 </div>
 
                 <div id="service-cards" className="relative w-full sm:w-1/2 md:w-1/3 p-4">
