@@ -10,8 +10,8 @@ const Navbar = () => {
             <div className='max-w-full mx-auto flex items-center justify-between'>
                 {/* Logo */}
                 <div>
-                    <Link alt='small ghost stack icon' to='/home' id='nav-link' className='text-xl'>
-                        <img className='h-12' src='/img/ghost.svg' />
+                    <Link  to='/home' id='nav-link' className='text-xl'>
+                        <img alt='small ghost stack icon' className='h-12' src='/img/ghost.svg' />
                     </Link>
                 </div>
 
