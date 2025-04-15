@@ -27,7 +27,7 @@ const ContactForm = () => {
       };
 
     return (
-        <form onSubmit={handleSubmit} id="contact-form" name="contact">
+        <form onSubmit={handleSubmit} data-netlify-recapchta='true' id="contact-form" name="contact">
             <input type="hidden" name="form-name" value="contact" />
                 <div class='form-group'>
                     <label for='name'>Name: </label>
@@ -46,7 +46,8 @@ const ContactForm = () => {
                     <textarea id='message' name='message' rows='5' value={message}  onChange={(e) => setMessage(e.target.value)} required/><br/>
                 </div>
 
-
+                <div data-netlify-recaptcha='true'></div>
+                
                 <button class='form-button' type="submit" >Submit</button>
         </form>
     )
