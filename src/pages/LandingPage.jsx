@@ -83,7 +83,7 @@ const LandingPage = () => {
                             $0 DOWN – CUSTOM WEBSITE & ONGOING SUPPORT FOR $150/mo
                         </h1>
                         <p className="text-lg sm:text-xl ml-4 mr-4 pl-4 pr-4 sm:pl-16 sm:pr-16">
-                            Get a professionally built, fully responsive 5-page website with no upfront costs. For $150/month, you'll receive design, development, hosting, and 3 hours of content updates each month — all backed by a 6-month agreement. Need more than 5 pages? No problem — we’ll provide custom pricing based on your project’s size and needs. You’ll also get reliable support and ongoing updates to keep your site sharp and running smoothly.
+                            Get a professionally built, fully responsive 5-page website with no upfront costs. For $150/month, you'll receive design, development, hosting, and content updates each month — all backed by a 6-month agreement. Need more than 5 pages? No problem — we’ll provide custom pricing based on your project’s size and needs. You’ll also get reliable support and ongoing updates to keep your site sharp and running smoothly.
                         </p>
                     </div>
 
@@ -185,7 +185,7 @@ const LandingPage = () => {
                     </div>
                     <div className="mt-4">
                         <div className="mb-4 flex justify-center items-end">
-                            <h1 className="mr-2 text-4xl sm:text-5xl">$600</h1>
+                            <h1 className="mr-2 text-4xl sm:text-5xl">$800</h1>
                             <h3 className="text-sm sm:text-lg">+$25/mo Hosting</h3>
                         </div>
                         <Link onClick={() => window.scrollTo(0, 0)} id="get-started-button-glow" to='/contact' className="block text-center mt-4">Get Started</Link>
