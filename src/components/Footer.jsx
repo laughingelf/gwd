@@ -47,11 +47,11 @@ const Footer = () => {
                         </div>
                         <div className="flex items-center">
                             <img className="mr-4 w-6 h-6" src="/img/icons/phone.svg" alt="Phone" />
-                            <a href="tel:972380991" className="text-lg sm:text-xl">972-338-0991</a>
+                            <a href="tel:9723380991" className="text-lg sm:text-xl">972-338-0991</a>
                         </div>
                         <div className="flex items-center">
                             <img className="mr-4 w-6 h-6" src="/img/icons/email.svg" alt="Email" />
-                            <a href="mailto:greylinewdinfo@gmail.com" className="text-lg sm:text-xl">greylinewdinfo@gmail.com</a>
+                            <a href="mailto:ghoststackdesigns@gmail.com" className="text-lg sm:text-xl">ghoststackdesigns@gmail.com</a>
                         </div>
                         <div className="flex items-center">
                             <img className="mr-4 w-6 h-6" src="/img/icons/pin.svg" alt="Location" />

@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { Link } from "react-router-dom";
+
 
 const Contact = () => {
 
@@ -44,32 +44,32 @@ const Contact = () => {
                             </div>
                             <div className="flex items-center mt-4">
                                 <img className=" mr-4 w-10 h-10" src="/img/icons/email.svg" alt="Email" />
-                                <a href="mailto:greylinewdinfo@gmail.com" className="lg:text-3xl sm:text-xl">greylinewdinfo@gmail.com</a>
+                                <a href="mailto:ghoststackdesigns@gmail.com" className="lg:text-3xl sm:text-xl">ghoststackdesigns@gmail.com</a>
                             </div>  
                         </div>
 
                     </div>
                     <div>
-                        <form id="contact-form">
+                        <form method="POST" netlify id="contact-form">
                             <div class='form-group'>
                                 <label for='name'>Name: </label>
-                                <input type='text' id='name' name='name' reqired/><br/><br/>
+                                <input onChange={(e) => setName(e.target.value)} type='text' id='name' name='name' reqired/><br/><br/>
                             </div>
                             <div class='form-group'>
                                 <label for='email'>Email:</label><br/>
-                                <input type='email' id='email' name='email' required/><br/><br/>
+                                <input onChange={(e) => setEmail(e.target.value)} type='email' id='email' name='email' required/><br/><br/>
                             </div>
                             <div class='form-group'>
                                 <label for='phone'>Phone:</label><br/>
-                                <input type='tel' id='phone' name='phone' required/><br/><br/>
+                                <input onChange={(e) => setPhone(e.target.value)} type='tel' id='phone' name='phone' required/><br/><br/>
                             </div>
                             <div class='form-group'>
                                 <label for='message'>Message:</label><br/>
-                                <textarea id='message' name='message' rows='5' required/><br/>
+                                <textarea onChange={(e) => setMessage(e.target.value)} id='message' name='message' rows='5' required/><br/>
                             </div>
 
 
-                            <button class='form-button' type="submit">Submit</button>
+                            <button class='form-button' type="submit" >Submit</button>
                         </form>
                     </div>
                 </div>
