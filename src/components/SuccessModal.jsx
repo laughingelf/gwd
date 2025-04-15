@@ -1,4 +1,4 @@
-import "./Modal.css";
+import '../Modal.css'
 
 const SuccessModal = ({ show, onClose, title, children }) => {
   if (!show) return null;
