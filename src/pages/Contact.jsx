@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+// import ReactDOM from 'react-dom';
 
 
 const Contact = () => {
@@ -7,6 +8,9 @@ const Contact = () => {
     return (
 
         <>
+           <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+            <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+            <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
         <Navbar/>
             <div className="mx-4">
                 <div>
@@ -50,28 +54,45 @@ const Contact = () => {
 
                     </div>
                     <div>
-                        <form method="POST" data-netlify="true" id="contact-form" name="contact">
-                        <input type="hidden" name="form-name" value="contact" />
-                            <div class='form-group'>
-                                <label for='name'>Name: </label>
-                                <input onChange={(e) => setName(e.target.value)} type='text' id='name' name='name' reqired/><br/><br/>
-                            </div>
-                            <div class='form-group'>
-                                <label for='email'>Email:</label><br/>
-                                <input onChange={(e) => setEmail(e.target.value)} type='email' id='email' name='email' required/><br/><br/>
-                            </div>
-                            <div class='form-group'>
-                                <label for='phone'>Phone:</label><br/>
-                                <input onChange={(e) => setPhone(e.target.value)} type='tel' id='phone' name='phone' required/><br/><br/>
-                            </div>
-                            <div class='form-group'>
-                                <label for='message'>Message:</label><br/>
-                                <textarea onChange={(e) => setMessage(e.target.value)} id='message' name='message' rows='5' required/><br/>
-                            </div>
 
-
-                            <button class='form-button' type="submit" >Submit</button>
+                        <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+                            <input type='text' name="name" />
+                            <input type='email' name='email' />
+                            <input type='tel' name='phone' />
+                            <textarea name='message'></textarea>
                         </form>
+
+                        <div id="root"></div>
+                        
+                        <script type="text/babel">
+
+                            ReactDOM.render (
+                                <form method="POST" data-netlify="true" id="contact-form" name="contact">
+                                <input type="hidden" name="form-name" value="contact" />
+                                    <div class='form-group'>
+                                        <label for='name'>Name: </label>
+                                        <input type='text' id='name' name='name' reqired/><br/><br/>
+                                    </div>
+                                    <div class='form-group'>
+                                        <label for='email'>Email:</label><br/>
+                                        <input type='email' id='email' name='email' required/><br/><br/>
+                                    </div>
+                                    <div class='form-group'>
+                                        <label for='phone'>Phone:</label><br/>
+                                        <input type='tel' id='phone' name='phone' required/><br/><br/>
+                                    </div>
+                                    <div class='form-group'>
+                                        <label for='message'>Message:</label><br/>
+                                        <textarea id='message' name='message' rows='5' required/><br/>
+                                    </div>
+
+
+                                    <button class='form-button' type="submit" >Submit</button>
+                                </form>,
+                                document.getElementById('root')
+                            );
+                        </script>
+
                     </div>
                 </div>
 
