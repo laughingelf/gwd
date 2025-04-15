@@ -16,6 +16,7 @@ const ContactForm = () => {
             body: encode({'form-name': 'contact', name, email, phone, message}),
         })
         .then(() => alert("Success!"))
+        .then(() => setName(''), setEmail(''), setPhone(''), setMessage('') )
         .catch((error) => alert(error))
     };
 
