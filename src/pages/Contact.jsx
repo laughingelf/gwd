@@ -50,7 +50,8 @@ const Contact = () => {
 
                     </div>
                     <div>
-                        <form method="POST" data-netlify="true" id="contact-form">
+                        <form method="POST" data-netlify="true" id="contact-form" name="contact">
+                        <input type="hidden" name="form-name" value="contact" />
                             <div class='form-group'>
                                 <label for='name'>Name: </label>
                                 <input onChange={(e) => setName(e.target.value)} type='text' id='name' name='name' reqired/><br/><br/>
