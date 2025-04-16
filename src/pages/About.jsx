@@ -54,7 +54,7 @@ const About = () => {
                         My drive to support small businesses runs deep. I grew up just outside a small country town on a ranch, where we depended on mom-and-pop
                         shops for everything from feed to groceries. In recent years, I’ve watched those types of businesses fade out, unable to keep up with the
                         fast-moving online world. I knew I wanted to help, but until recently, I didn’t have the right approach. After seeing how another freelance
-                        developer was lifting up small businesses with affordable, purpose-built websites, it all clicked. So I went all in. Greyline is more than
+                        developer was lifting up small businesses with affordable, purpose-built websites, it all clicked. So I went all in. GhostStack is more than
                         a web design company—it’s a way to give the little guy a fighting chance in a world built for big players. Let’s build something that works
                         just as hard as you do.
                         </p>
