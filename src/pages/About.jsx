@@ -25,12 +25,16 @@ const About = () => {
                 </div>
 
                 <div className="flex flex-col lg:flex-row items-center justify-center w-full max-w-6xl mx-auto px-4 py-12 gap-10">
-                    <div className="w-full lg:w-1/2">
+                    <div className="w-full lg:w-1/2 relative">
                         <img
                         src="/img/web-work.webp"
                         alt="GhostStack owner working"
                         className="w-full h-auto rounded-xl shadow-md"
                         />
+                        <div className="absolute bottom-4 right-2 text-white p-4 rounded-md">
+                            <p className="text-2xl">Justin Gery</p>
+                            <p className="text-2xl">Owner/Developer</p>
+                        </div>
                     </div>
 
                     <div className="w-full text-left lg:w-1/2 space-y-6">

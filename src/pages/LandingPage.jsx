@@ -72,7 +72,7 @@ const LandingPage = () => {
             <div className="mt-16 flex flex-wrap items-center px-4 max-w-full overflow-hidden">
                 {/* Image Section */}
                 <div className="w-full sm:w-1/2 lg:w-1/3 mb-8 sm:mb-0">
-                    <img alt="GhostStack owner working" className="rounded-xl w-full sm:w-3/4 lg:w-full mx-auto sm:mx-0" src="/img/web-work.webp" />
+                    <img alt="different website designs" className="rounded-xl w-full sm:w-3/4 lg:w-full mx-auto sm:mx-0" src="/img/website.png" />
                 </div>
 
                 {/* Text and Info Cards Section */}
