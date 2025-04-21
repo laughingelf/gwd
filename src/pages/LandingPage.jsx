@@ -17,7 +17,7 @@ const LandingPage = () => {
                 <div className="text-left lg:w-1/2">
                     <h4 id="bluetext" className="font-mono mono text-2xl sm:text-3xl mb-2">CUSTOM CODED, CUSTOM DESIGNS</h4>
                     <h1 id='big-text' className="text-4xl sm:text-5xl lg:text-6xl mb-6 sm:mb-8">AFFORDABLE WEB DESIGN FOR SMALL BUSINESS</h1>
-                    <h7 className="text-lg sm:text-xl block">We don’t use WordPress or page builders — every site is custom-coded for speed, performance, and results. Plans start at $150/month.</h7>
+                    <h7 className="text-lg sm:text-xl block">We don’t use WordPress or page builders — every site is custom-coded for speed, performance, and results. Plans start at $175/month.</h7>
                     <div className="mt-6 sm:mt-8">
                         <Link onClick={() => window.scrollTo(0, 0)} to='/contact' id='get-started-button'>Get Started</Link>
                         <Link onClick={() => window.scrollTo(0, 0)} id="about-us-button" className="ml-4 sm:ml-8 inline-block mt-4 sm:mt-0" to='/about'>About Us</Link>
@@ -83,7 +83,7 @@ const LandingPage = () => {
                             $0 DOWN – CUSTOM WEBSITE & ONGOING SUPPORT FOR $150/mo
                         </h1>
                         <p className="text-lg sm:text-xl ml-4 mr-4 pl-4 pr-4 sm:pl-16 sm:pr-16">
-                            Get a professionally built, fully responsive 5-page website with no upfront costs. For $150/month, you'll receive design, development, hosting, and content updates each month — all backed by a 6-month agreement. Need more than 5 pages? No problem — we’ll provide custom pricing based on your project’s size and needs. You’ll also get reliable support and ongoing updates to keep your site sharp and running smoothly.
+                            Get a professionally built, fully responsive 5-page website with no upfront costs. For $175/month, you'll receive design, development, hosting, and content updates each month — all backed by a 6-month agreement. Need more than 5 pages? No problem — we’ll provide custom pricing based on your project’s size and needs. You’ll also get reliable support and ongoing updates to keep your site sharp and running smoothly.
                         </p>
                     </div>
 
