@@ -80,7 +80,7 @@ const LandingPage = () => {
                     <div>
                         <h4 id="bluetext" className="text-3xl">WHAT WE OFFER</h4>
                         <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl mb-8 pl-4 pr-4 sm:pl-16 sm:pr-16">
-                            $0 DOWN – CUSTOM WEBSITE & ONGOING SUPPORT FOR $150/mo
+                            $0 DOWN – CUSTOM WEBSITE & ONGOING SUPPORT FOR $175/mo
                         </h1>
                         <p className="text-lg sm:text-xl ml-4 mr-4 pl-4 pr-4 sm:pl-16 sm:pr-16">
                             Get a professionally built, fully responsive 5-page website with no upfront costs. For $175/month, you'll receive design, development, hosting, and content updates each month — all backed by a 6-month agreement. Need more than 5 pages? No problem — we’ll provide custom pricing based on your project’s size and needs. You’ll also get reliable support and ongoing updates to keep your site sharp and running smoothly.
