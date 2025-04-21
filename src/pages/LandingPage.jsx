@@ -185,8 +185,8 @@ const LandingPage = () => {
                     </div>
                     <div className="mt-4">
                         <div className="mb-4 flex justify-center items-end">
-                            <h1 className="mr-2 text-4xl sm:text-5xl">$800</h1>
-                            <h3 className="text-sm sm:text-lg">+$25/mo Hosting</h3>
+                            <h1 className="mr-2 text-4xl sm:text-5xl">$900</h1>
+                            <h3 className="text-sm sm:text-lg">+$25/mo Hosting-taxes included</h3>
                         </div>
                         <Link onClick={() => window.scrollTo(0, 0)} id="get-started-button-glow" to='/contact' className="block text-center mt-4">Get Started</Link>
                     </div>
@@ -227,8 +227,8 @@ const LandingPage = () => {
                     </div>
                     <div className="mt-4">
                         <div className="mb-4 flex justify-center items-end">
-                            <h1 className="mr-2 text-4xl sm:text-5xl">$150</h1>
-                            <h3 className="text-sm sm:text-lg">Per Month</h3>
+                            <h1 className="mr-2 text-4xl sm:text-5xl">$175</h1>
+                            <h3 className="text-sm sm:text-lg">Per Month-taxes included</h3>
                         </div>
                         <Link onClick={() => window.scrollTo(0, 0)} id="get-started-button-glow" to='/contact' className="block text-center mt-4">Get Started</Link>
                     </div>
