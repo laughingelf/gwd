@@ -18,7 +18,7 @@ const Footer = () => {
                     <h3 className="text-lg sm:text-xl mb-8">
                         We believe small businesses deserve more. You don’t have to be big to look big online. Your website should reflect the hard work you put in every day. Let’s build something great together that shows off your business in the best light.
                     </h3>
-                    <Link 
+                    <Link onClick={() => window.scrollTo(0, 0)}
                         id="get-started-button-bigger" 
                         to='/contact' 
                         className="px-6 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors">

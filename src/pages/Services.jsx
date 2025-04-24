@@ -25,13 +25,13 @@ const Services = () => {
                 </div>
 
                 <div className="flex flex-col lg:flex-row">
-                    <div className="w-full lg:w-1/2">
+                    {/* <div className="w-full lg:w-1/2">
                             <img
                             src="/img/web-work.jpg"
                             alt="GhostStack owner working"
                             className="w-full h-auto rounded-xl shadow-md"
                             />
-                    </div>
+                    </div> */}
                     <div className="w-full px-4 py-12">
                         <div className="max-w-4xl mx-auto space-y-12">
                             

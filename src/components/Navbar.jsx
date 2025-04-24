@@ -10,7 +10,7 @@ const Navbar = () => {
             <div className='max-w-full mx-auto flex items-center justify-between'>
                 {/* Logo */}
                 <div>
-                    <Link  to='/home' id='nav-link' className='text-xl'>
+                    <Link onClick={() => window.scrollTo(0, 0)}  to='/home' id='nav-link' className='text-xl'>
                         <img alt='small ghost stack icon' className='h-12' src='/img/ghost.svg' />
                     </Link>
                 </div>
@@ -24,15 +24,15 @@ const Navbar = () => {
 
                 {/* Nav Links - Desktop */}
                 <div className='hidden lg:flex items-center space-x-6 text-lg'>
-                    <Link to='/home' id='nav-link'>Home</Link>
-                    <Link to='/about' id='nav-link'>About Us</Link>
-                    <Link to='/services' id='nav-link'>Services</Link>
-                    <Link to='/contact' id='nav-link'>Contact</Link>
+                    <Link onClick={() => window.scrollTo(0, 0)} to='/home' id='nav-link'>Home</Link>
+                    <Link onClick={() => window.scrollTo(0, 0)} to='/about' id='nav-link'>About Us</Link>
+                    <Link onClick={() => window.scrollTo(0, 0)} to='/services' id='nav-link'>Services</Link>
+                    <Link onClick={() => window.scrollTo(0, 0)} to='/contact' id='nav-link'>Contact</Link>
                 </div>
 
                 {/* Get Started - Desktop */}
                 <div className='hidden lg:block'>
-                    <Link to='/contact' id='get-started-button'>Get Started</Link>
+                    <Link onClick={() => window.scrollTo(0, 0)} to='/contact' id='get-started-button'>Get Started</Link>
                 </div>
             </div>
 
