@@ -54,7 +54,7 @@ const Services = () => {
 
                             {/* Bottom Section */}
                             <div className="space-y-4 text-center">
-                                <h3 className="text-2xl md:text-3xl font-bold underline">WHY DOES IT MATTER</h3>
+                                <h3 className="text-2xl md:text-3xl font-bold underline text-[#0DB6CC]">WHY DOES IT MATTER</h3>
                                 <ul className="list-disc list-inside space-y-2 text-lg md:text-lg max-w-md mx-auto text-left">
                                     <li>Loads Super Fast</li>
                                     <li>Helps Turn Visitors Into Customers</li>
@@ -65,7 +65,7 @@ const Services = () => {
                             </div>
 
                             <div>
-                                <h3 className="text-2xl md:text-3xl font-bold mb-4 underline">
+                                <h3 className="text-2xl md:text-3xl font-bold mb-4 underline text-[#0DB6CC]">
                                     A FASTER WEBSITE KEEPS USERS ENGAGED AND DRIVES MORE CONVERSIONS
                                 </h3>
                                 <p className="text-lg text-left md:text-lg leading-relaxed max-w-3xl mx-auto">
@@ -79,7 +79,7 @@ const Services = () => {
                             </div>
 
                             <div>
-                                <h3 className="text-2xl md:text-3xl font-bold mb-4 underline">
+                                <h3 className="text-2xl md:text-3xl font-bold mb-4 underline text-[#0DB6CC]">
                                     CUSTOM-CODED SITES OFFER BETTER SECURITY
                                 </h3>
                                 <p className="text-lg text-left md:text-lg leading-relaxed max-w-3xl mx-auto mb-4">
@@ -97,7 +97,7 @@ const Services = () => {
                             </div>
 
                             <div>
-                                <h3 className="text-2xl md:text-3xl font-bold mb-4 underline">
+                                <h3 className="text-2xl md:text-3xl font-bold mb-4 underline text-[#0DB6CC]">
                                     BOOST YOUR SEARCH VISIBILITY
                                 </h3>
                                 <p className="text-lg text-left md:text-lg leading-relaxed max-w-3xl mx-auto mb-4">
@@ -117,7 +117,7 @@ const Services = () => {
                             </div>
 
                             <div>
-                                <h3 className="text-2xl md:text-3xl mb-4 font-bold underline">
+                                <h3 className="text-2xl md:text-3xl mb-4 font-bold underline text-[#0DB6CC]">
                                     BOOST YOUR GOOGLE BUSINESS PROFILE VISIBILITY
                                 </h3>
                                 <p className="text-lg text-left md:text-lg leading-relaxed max-w-3xl mx-auto mb-4">

@@ -27,12 +27,15 @@ const Navbar = () => {
                     <Link onClick={() => window.scrollTo(0, 0)} to='/home' id='nav-link'>Home</Link>
                     <Link onClick={() => window.scrollTo(0, 0)} to='/about' id='nav-link'>About Us</Link>
                     <Link onClick={() => window.scrollTo(0, 0)} to='/services' id='nav-link'>Services</Link>
+                    <Link onClick={() => window.scrollTo(0, 0)} to='/pricing' id='nav-link'>Pricing</Link>
                     <Link onClick={() => window.scrollTo(0, 0)} to='/contact' id='nav-link'>Contact</Link>
                 </div>
 
                 {/* Get Started - Desktop */}
                 <div className='hidden lg:block'>
-                    <Link onClick={() => window.scrollTo(0, 0)} to='/contact' id='get-started-button'>Get Started</Link>
+                    <Link onClick={() => window.scrollTo(0, 0)} to='/contact'
+                    className='bg-[#0DB6CC] text-white px-8 py-2 rounded-2xl hover:text-lg hover:bg-white hover:text-black hover:shadow-md shadow-black transition'
+                    >Get Started</Link>
                 </div>
             </div>
 
@@ -42,6 +45,7 @@ const Navbar = () => {
                     <Link to='/home' id='nav-link' onClick={() => setIsOpen(false)}>Home</Link>
                     <Link to='/about' id='nav-link' onClick={() => setIsOpen(false)}>About Us</Link>
                     <Link to='/services' id='nav-link' onClick={() => setIsOpen(false)}>Services</Link>
+                    <Link to='/pricing' id='nav-link' onClick={() => setIsOpen(false)}>Pricing</Link>
                     <Link to='/contact' id='nav-link' onClick={() => setIsOpen(false)}>Contact</Link>
                     <Link to='/contact' id='get-started-button' onClick={() => setIsOpen(false)}>Get Started</Link>
                 </div>

@@ -32,8 +32,8 @@ const Contact = () => {
                 <div id="contact-page">
                     <div id="contact-info">
                         <div className="w-full text-left lg:w-1/2 space-y-6">
-                                <h3 id="bluetext" className="text-xl font-semibold">Contact Us</h3>
-                                <h1 className="text-6xl md:text-5xl font-bold">
+                                {/* <h3 id="bluetext" className="text-xl font-semibold">Contact Us</h3> */}
+                                <h1 className="text-6xl md:text-5xl font-bold text-[#0DB6CC]">
                                 Get In Touch
                                 </h1>
                                 <p className="text-lg leading-relaxed">

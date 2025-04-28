@@ -64,9 +64,14 @@ const LandingPage = () => {
                     <Link onClick={() => window.scrollTo(0, 0)} id="service-card-links" to='/contact'>Get Started</Link>
                 </div>
             </div>
-
-            <div id="get-started-button-bigger" className="mt-12 inline-block">
-                <Link onClick={() => window.scrollTo(0, 0)} to='/contact'>Call Us Today</Link>
+            
+            <div className="flex justify-center items-center flex-col md:flex-row gap-4 ">
+                <div id="get-started-button-bigger" className="mt-6 md:mt-12 inline-block w-48">
+                    <Link onClick={() => window.scrollTo(0, 0)} to='/contact'>Call Us Today</Link>
+                </div>
+                <div id="get-started-button-bigger" className="mt-6 md:mt-12 inline-block w-48">
+                    <Link onClick={() => window.scrollTo(0, 0)} to='/contact'>Pricing</Link>
+                </div>
             </div>
 
             <div className="mt-16 flex flex-wrap items-center px-4 max-w-full overflow-hidden">
@@ -131,109 +136,25 @@ const LandingPage = () => {
                     </div>
 
                     {/* Call to Action Button */}
-                    <div className="mt-8 mb-8 text-center sm:text-left">
-                        <Link onClick={() => window.scrollTo(0, 0)} id="get-started-button" to='/contact' className="px-4 py-2 bg-blue-500 text-white rounded">
+                    <div className="mt-8 mb-8 text-center sm:text-left flex justify-center w-full">
+                        <Link onClick={() => window.scrollTo(0, 0)} id='get-started-button'  to='/contact' className="px-8 py-3 rounded-2xl bg-white text-black text-2xl">
                             Call Us Today
                         </Link>
                     </div>
                 </div>
             </div>
-            <div className="flex flex-wrap justify-between items-center px-4">
-                <div className="mt-12 text-left w-full sm:w-1/2 lg:w-2/3">
-                    <h1 id="bluetext" className="text-3xl text-center sm:text-left">OUR PRICING</h1>
-                    <h1 className="text-4xl sm:text-5xl md:text-6xl mb-4 text-center sm:text-left">PRICING PACKAGES</h1>
-                    <h1 className="text-4xl sm:text-5xl md:text-6xl mb-8 text-center sm:text-left">FOR EVERY BUDGET</h1>
+            <div className="flex flex-col justify-center items-center px-4">
+                <div className="mt-12 text-left w-full sm:w-auto lg:w-2/3">
+                    <h1 id="bluetext" className="text-3xl md:text-4xl text-center ">OUR PRICING</h1>
+                    <h1 className="text-4xl sm:text-5xl md:text-6xl mb-4 text-center ">PRICING PACKAGES</h1>
+                    <h1 className="text-4xl sm:text-5xl md:text-6xl mb-8 text-center ">FOR EVERY BUDGET</h1>
                 </div>
-                <div className="mt-8 w-full sm:w-1/2 lg:w-1/3 flex justify-center sm:justify-start">
-                    <Link onClick={() => window.scrollTo(0, 0)} id="get-started-button-bigger" to='/contact' className="px-6 py-3 bg-blue-500 text-white rounded text-xl">Get Started</Link>
+                <div className="mt-8 w-full sm:w-1/2 lg:w-1/3 text-center">
+                    <Link onClick={() => window.scrollTo(0, 0)} id='get-started-button'  to='/pricing' className="px-6 py-3 bg-[#0DB6CC] text-white rounded-2xl text-3xl">See Pricing</Link>
                 </div>
             </div>
 
-            <div className="flex flex-wrap justify-center items-center px-4">
-                {/* Lump Sum Card */}
-                <div id="price-card" className="w-full sm:w-80 mt-8 sm:mx-4 border p-4 rounded-xl mb-8 sm:mb-0">
-                    <h1 id="bluetext" className="text-3xl sm:text-4xl mb-4 font-semibold underline text-center">LUMP SUM</h1>
-                    <div>
-                        <div id="pricing-card" className="flex items-center justify-between mb-2 text-sm sm:text-lg">
-                            <h5>Design And Development</h5>
-                            <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" />
-                        </div>
-                        <div id="pricing-card" className="flex items-center justify-between mb-2 text-sm sm:text-lg">
-                            <h5>$25/mo Hosting</h5>
-                            <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" />
-                        </div>
-                        <div id="pricing-card" className="flex items-center justify-between mb-2 text-sm sm:text-lg">
-                            <h5>$75 fee Per Page after 5</h5>
-                            <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" />
-                        </div>
-                        <div id="pricing-card" className="flex items-center justify-between mb-2 text-sm sm:text-lg">
-                            <h5>$50/mo 5 Hours Content Edits</h5>
-                            <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" />
-                        </div>
-                        <div id="pricing-card" className="flex items-center justify-between mb-2 text-sm sm:text-lg">
-                            <h5>$250 To Add A Blog</h5>
-                            <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" />
-                        </div>
-                        <div id="pricing-card" className="flex items-center justify-between mb-2 text-sm sm:text-lg">
-                            <h5>24/7 Support</h5>
-                            <img alt="white no icon" className="h-6 sm:h-7" src="/img/icons/nohelp.svg" />
-                        </div>
-                        <div id="pricing-card" className="flex items-center justify-between mb-2 text-sm sm:text-lg">
-                            <h5>Lifetime Updates</h5>
-                            <img alt="white no icon" className="h-6 sm:h-7" src="/img/icons/nohelp.svg" />
-                        </div>
-                    </div>
-                    <div className="mt-4">
-                        <div className="mb-4 flex justify-center items-end">
-                            <h1 className="mr-2 text-4xl sm:text-5xl">$900</h1>
-                            <h3 className="text-sm sm:text-lg">+$25/mo Hosting-taxes included</h3>
-                        </div>
-                        <Link onClick={() => window.scrollTo(0, 0)} id="get-started-button-glow" to='/contact' className="block text-center mt-4">Get Started</Link>
-                    </div>
-                </div>
-
-                {/* Monthly Card */}
-                <div id="price-card" className="w-full sm:w-80 mt-8 sm:mx-4 border p-4 rounded-xl">
-                    <h1 id="bluetext" className="text-3xl sm:text-4xl mb-4 font-semibold underline text-center">MONTHLY</h1>
-                    <div>
-                        <div id="pricing-card" className="flex items-center justify-between mb-2 text-sm sm:text-lg">
-                            <h5>Design And Development</h5>
-                            <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" />
-                        </div>
-                        <div id="pricing-card" className="flex items-center justify-between mb-2 text-sm sm:text-lg">
-                            <h5>$Includes Hosting</h5>
-                            <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" />
-                        </div>
-                        <div id="pricing-card" className="flex items-center justify-between mb-2 text-sm sm:text-lg">
-                            <h5>$75 fee Per Page after 5</h5>
-                            <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" />
-                        </div>
-                        <div id="pricing-card" className="flex items-center justify-between mb-2 text-sm sm:text-lg">
-                            <h5>Unlimited Edits</h5>
-                            <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" />
-                        </div>
-                        <div id="pricing-card" className="flex items-center justify-between mb-2 text-sm sm:text-lg">
-                            <h5>$250 To Add A Blog</h5>
-                            <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" />
-                        </div>
-                        <div id="pricing-card" className="flex items-center justify-between mb-2 text-sm sm:text-lg">
-                            <h5>24/7 Support</h5>
-                            <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" />
-                        </div>
-                        <div id="pricing-card" className="flex items-center justify-between mb-2 text-sm sm:text-lg">
-                            <h5>Lifetime Updates</h5>
-                            <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" />
-                        </div>
-                    </div>
-                    <div className="mt-4">
-                        <div className="mb-4 flex justify-center items-end">
-                            <h1 className="mr-2 text-4xl sm:text-5xl">$175</h1>
-                            <h3 className="text-sm sm:text-lg">Per Month-taxes included</h3>
-                        </div>
-                        <Link onClick={() => window.scrollTo(0, 0)} id="get-started-button-glow" to='/contact' className="block text-center mt-4">Get Started</Link>
-                    </div>
-                </div>
-            </div>
+            
 
             <Website />
 

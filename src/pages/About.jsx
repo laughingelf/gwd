@@ -38,7 +38,7 @@ const About = () => {
                     </div>
 
                     <div className="w-full text-left lg:w-1/2 space-y-6">
-                        <h3 id="bluetext" className="text-xl font-semibold">GhostStack Designs</h3>
+                        <h3 id="bluetext" className="text-3xl font-semibold">GhostStack Designs</h3>
                         <h1 className="text-6xl md:text-5xl font-bold">
                         We Build for the Underdogs of the Online Age
                         </h1>
@@ -54,7 +54,7 @@ const About = () => {
                         My drive to support small businesses runs deep. I grew up just outside a small country town on a ranch, where we depended on mom-and-pop
                         shops for everything from feed to groceries. In recent years, I’ve watched those types of businesses fade out, unable to keep up with the
                         fast-moving online world. I knew I wanted to help, but until recently, I didn’t have the right approach. After seeing how another freelance
-                        developer was lifting up small businesses with affordable, purpose-built websites, it all clicked. So I went all in. GhostStack is more than
+                        developer was lifting up small businesses with affordable, purpose-built websites, it all clicked. So I went all in. <span className="text-[#0DB6CC]">GhostStack</span> is more than
                         a web design company—it’s a way to give the little guy a fighting chance in a world built for big players. Let’s build something that works
                         just as hard as you do.
                         </p>
@@ -62,14 +62,14 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className="flex flex-col md:flex-row items-center justify-between px-4 sm:px-8 lg:px-16 py-8">
-                    <div className="text-left mb-8 md:mb-0 md:w-1/2">
-                        <h3 id="bluetext" className="text-xl font-semibold">The Working Process</h3>
+                <div className="flex flex-col  items-center justify-center px-4 sm:px-8 lg:px-16 py-8 w-fit">
+                    <div className="text-left mb-8 md:mb-8 md:w-full text-center flex flex-col justify-center md:items-center">
+                        <h3 id="bluetext" className="text-2xl font-semibold">The Working Process</h3>
                         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold">
                             From Start to Finish, We’ve Got You
                         </h1>
                     </div>
-                    <div className="md:w-1/2 text-left">
+                    <div className="md:w-2/3 text-left">
                         <p className="text-lg sm:text-xl md:text-lg lg:text-xl">
                             Once the contract is signed, we'll either meet in person (if you're local) or send you a short questionnaire to understand your business and what you offer. 
                             Using this information, we’ll create content for your site and design an initial theme. After we get your approval on the design, we’ll move forward with building the site. 

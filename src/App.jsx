@@ -6,6 +6,7 @@ import Services from './pages/Services'
 import Testimonials from './pages/Testimonials'
 import NoPage from './pages/NoPage'
 import Contact from './pages/Contact'
+import Pricing from './pages/Pricing'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
           <Route path='services' element={<Services/>} />
           <Route path='/contact' element={<Contact/>} />
           <Route path='/testimonials' element={<Testimonials/>} />
+          <Route path='/pricing' element={<Pricing/>} />
           <Route path='*' element={<NoPage/>} />
         </Routes>
       </BrowserRouter>
