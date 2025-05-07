@@ -70,7 +70,7 @@ const LandingPage = () => {
                     <Link onClick={() => window.scrollTo(0, 0)} to='/contact'>Call Us Today</Link>
                 </div>
                 <div id="get-started-button-bigger" className="mt-6 md:mt-12 inline-block w-48">
-                    <Link onClick={() => window.scrollTo(0, 0)} to='/contact'>Pricing</Link>
+                    <Link onClick={() => window.scrollTo(0, 0)} to='/pricing'>Pricing</Link>
                 </div>
             </div>
 

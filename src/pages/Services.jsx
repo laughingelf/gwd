@@ -128,6 +128,27 @@ const Services = () => {
                                 to turn those visitors into real leads.
                                 </p>
                             </div>
+                            <div className="flex flex-row justify-center gap-6">
+                                <div>
+                                    <Link
+                                    onClick={() => window.scrollTo(0, 0)}
+                                    to="/contact"
+                                    className="w-40 text-center text-2xl bg-[#0DB6CC] text-white px-8 py-2 rounded-2xl hover:bg-white hover:text-black hover:shadow-md shadow-black transition"
+                                    >
+                                    Get Started
+                                    </Link>
+                                </div>
+                                <div>
+                                    <Link
+                                    onClick={() => window.scrollTo(0, 0)}
+                                    to="/contact"
+                                    className="min-w-40 text-center text-2xl bg-[#0DB6CC] text-white px-12 py-2 rounded-2xl hover:bg-white hover:text-black hover:shadow-md shadow-black transition"
+                                    >
+                                    Pricing
+                                    </Link>
+                                </div>
+                            </div>
+
 
                         </div>
                     </div>
