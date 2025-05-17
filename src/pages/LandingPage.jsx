@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 import Website from "../components/Website";
+import FeaturedProjects from "../components/FeaturedSites";
 
 const LandingPage = () => {
 
@@ -143,6 +144,7 @@ const LandingPage = () => {
                     </div>
                 </div>
             </div>
+            <FeaturedProjects/>
             <div className="flex flex-col justify-center items-center px-4">
                 <div className="mt-12 text-left w-full sm:w-auto lg:w-2/3">
                     <h1 id="bluetext" className="text-3xl md:text-4xl text-center ">OUR PRICING</h1>
