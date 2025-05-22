@@ -41,7 +41,9 @@ const LandingPage = () => {
                 <img
                 src="/img/GhostStack360.png"
                 alt="GhostStack Logo"
-                className="h-90"
+                width="1200"
+                height="675"
+                className="w-full h-auto object-cover"
                 />
             </picture>
         </div>
