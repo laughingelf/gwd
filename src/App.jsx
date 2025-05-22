@@ -7,6 +7,7 @@ import Testimonials from './pages/Testimonials'
 import NoPage from './pages/NoPage'
 import Contact from './pages/Contact'
 import Pricing from './pages/Pricing'
+import OnePage from './pages/OnePage'
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
           <Route path='/contact' element={<Contact/>} />
           <Route path='/testimonials' element={<Testimonials/>} />
           <Route path='/pricing' element={<Pricing/>} />
+          <Route path='/one-pager' element={<OnePage/>} />
           <Route path='*' element={<NoPage/>} />
         </Routes>
       </BrowserRouter>

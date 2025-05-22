@@ -2,6 +2,8 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 import Website from "../components/Website";
+import HeroServices from "../components/HeroServices";
+import FlatRateServices from "../components/FlatRate";
 
 const Services = () => {
 
@@ -9,8 +11,8 @@ const Services = () => {
 
         <>
         <Navbar/>
-            <div className="mx-4">
-                <div id="about-us-head" className="relative min-h-[20vh] flex items-center rounded-lg justify-center mb-24 text-6xl">
+            <div className="">
+                {/* <div id="about-us-head" className="relative min-h-[20vh] flex items-center rounded-lg justify-center mb-24 text-6xl">
                         <video
                             id="background-video"
                             loop
@@ -18,11 +20,13 @@ const Services = () => {
                             muted
                             playsInline
                             className="absolute top-0 left-0 w-full h-full object-cover z-0"
+                            
                         >
                             <source alt="Wed Design Header" src="/img/about-us-bg.mp4" type="video/mp4" />
                         </video>
                         <h1 className="relative z-10 text-white">Web Design</h1>
-                </div>
+                </div> */}
+                <HeroServices/>
 
                 <div className="flex flex-col lg:flex-row">
                     {/* <div className="w-full lg:w-1/2">
@@ -148,6 +152,7 @@ const Services = () => {
                                     </Link>
                                 </div>
                             </div>
+                            <FlatRateServices/>
 
 
                         </div>

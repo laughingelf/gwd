@@ -10,10 +10,42 @@ const LandingPage = () => {
 
         <>
         <Navbar/>
-        <div>
-            <div className="flex justify-center ">
-                <img alt="GhostStack Logo" className="h-90" src="/img/GhostStack360.png" />
-            </div>
+        <div className="mt-2">
+        <div className="flex justify-center">
+            <picture>
+                {/* Large screens - WebP */}
+                <source
+                srcSet="/img/GhostStack360-lg.webp"
+                type="image/webp"
+                media="(min-width: 768px)"
+                />
+                {/* Small screens - WebP */}
+                <source
+                srcSet="/img/GhostStack360.webp"
+                type="image/webp"
+                media="(max-width: 767px)"
+                />
+                {/* Large screens - PNG fallback */}
+                <source
+                srcSet="/img/GhostStack360-lg.png"
+                type="image/png"
+                media="(min-width: 768px)"
+                />
+                {/* Small screens - PNG fallback */}
+                <source
+                srcSet="/img/GhostStack360.png"
+                type="image/png"
+                media="(max-width: 767px)"
+                />
+                {/* Default image */}
+                <img
+                src="/img/GhostStack360.png"
+                alt="GhostStack Logo"
+                className="h-90"
+                />
+            </picture>
+        </div>
+
             <div className="flex flex-col-reverse lg:flex-row items-center mt-2 p-6 lg:p-16">
                 <div className="text-left lg:w-1/2">
                     <h4 id="bluetext" className="font-mono mono text-2xl sm:text-3xl mb-2">CUSTOM CODED, CUSTOM DESIGNS</h4>
@@ -25,7 +57,19 @@ const LandingPage = () => {
                     </div>
                 </div>
                 <div className="mb-10 lg:mb-0 lg:w-1/2">
-                    <img alt="computer, laptop, tablet, and phone showing beautiful websites" src="/img/landingpage.png" className="w-full max-w-md mx-auto"/>
+                <picture>
+                    {/* WebP version */}
+                    <source srcSet="/img/landingpage.webp" type="image/webp" />
+                    
+                    {/* PNG fallback */}
+                    <img
+                        src="/img/landingpage.png"
+                        alt="computer, laptop, tablet, and phone showing beautiful websites"
+                        // className="w-full h-auto"
+                        className="w-full max-w-xl mx-auto"
+                    />
+                </picture>
+
                 </div>
             </div>
             
@@ -78,7 +122,19 @@ const LandingPage = () => {
             <div className="mt-16 flex flex-wrap items-center px-4 max-w-full overflow-hidden">
                 {/* Image Section */}
                 <div className="w-full sm:w-1/2 lg:w-1/3 mb-8 sm:mb-0">
-                    <img alt="different website designs" className="rounded-xl w-full sm:w-3/4 lg:w-full mx-auto sm:mx-0" src="/img/website.png" />
+                    {/* <img alt="different website designs" className="rounded-xl w-full sm:w-3/4 lg:w-full mx-auto sm:mx-0" src="/img/website.png" /> */}
+                    <picture>
+                        {/* WebP version */}
+                        <source srcSet="/img/website.webp" type="image/webp" />
+                        
+                        {/* PNG fallback */}
+                        <img
+                            src="/img/website.png"
+                            alt="different website designs"
+                            className="rounded-xl w-full sm:w-3/4 lg:w-full mx-auto sm:mx-0"
+                        />
+                    </picture>
+
                 </div>
 
                 {/* Text and Info Cards Section */}

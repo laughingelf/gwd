@@ -1,0 +1,6 @@
+[build]
+functions = "netlify/functions"
+publish = "dist"  # or "build", depending on your frontend tool (Vite, React, etc.)
+
+[dev]
+functions = "netlify/functions"

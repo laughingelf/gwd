@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
+import HeroPricing from "../components/HeroPricing";
 
 
 const Pricing = () => {
@@ -9,7 +10,7 @@ const Pricing = () => {
         <>
         <Navbar/>
         <div>
-            <div id="about-us-head" className="relative min-h-[20vh] mx-4 flex items-center rounded-lg justify-center mb-24 text-6xl">
+            {/* <div id="about-us-head" className="relative min-h-[20vh] mx-4 flex items-center rounded-lg justify-center mb-24 text-6xl">
                         <video
                             id="background-video"
                             loop
@@ -21,7 +22,8 @@ const Pricing = () => {
                             <source alt="Wed Design Header" src="/img/about-us-bg.mp4" type="video/mp4" />
                         </video>
                     <h1 className="relative z-10 text-white">Pricing</h1>
-            </div>
+            </div> */}
+            <HeroPricing/>
             <section className="max-w-5xl mx-auto px-6 py-16 text-white text-center md:text-left">
                 <h2 className="text-4xl text-[#0DB6CC] md:text-5xl font-bold mb-8 text-center underline">Flexible Website Pricing Options</h2>
                 

@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ContactForm from "../components/ContactForm";
+import HeroContact from "../components/HeroContact";
 // import ReactDOM from 'react-dom';
 
 
@@ -13,9 +14,9 @@ const Contact = () => {
             <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
             <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
         <Navbar/>
-            <div className="mx-4">
+            <div className="">
                 <div>
-                    <div id="about-us-head" className="relative min-h-[20vh] flex items-center rounded-lg justify-center mb-24 text-6xl">
+                    {/* <div id="about-us-head" className="relative min-h-[20vh] flex items-center rounded-lg justify-center mb-24 text-6xl">
                         <video
                             id="background-video"
                             loop
@@ -27,7 +28,8 @@ const Contact = () => {
                             <source alt="Contact Header" src="/img/about-us-bg.mp4" type="video/mp4" />
                         </video>
                         <h1 className="relative z-10 text-white">Contact Us</h1>
-                    </div>
+                    </div> */}
+                    <HeroContact/>
                 </div>
                 <div id="contact-page">
                     <div id="contact-info">

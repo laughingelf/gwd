@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= data.businessName %> | One-Pager</title>
+
+    <!-- Load Tailwind -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Load Google Font dynamically -->
+    <% if (data.font) { %>
+    <link
+      href="https://fonts.googleapis.com/css2?family=<%= data.font %>:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "<%= data.font %>", sans-serif;
+      }
+    </style>
+    <% } %>
+  </head>
+
+  <body class="bg-gray-50 text-gray-900">
+    <% if (data.heroImage) { %>
+    <section
+      class="h-64 md:h-96 flex items-center justify-center text-white text-center"
+      style="
+        background-image: url('<%= data.heroImage %>');
+        background-size: cover;
+        background-position: center;
+      "
+    >
+      <div class="bg-black bg-opacity-50 p-4 rounded">
+        <h1 class="text-4xl font-bold"><%= data.businessName %></h1>
+        <p class="text-lg mt-2"><%= data.tagline %></p>
+      </div>
+    </section>
+    <% } else { %>
+    <header class="bg-blue-600 text-white py-6 text-center">
+      <h1 class="text-3xl font-bold"><%= data.businessName %></h1>
+      <p class="text-lg"><%= data.tagline %></p>
+    </header>
+    <% } %>
+
+    <main class="p-6 max-w-5xl mx-auto space-y-10">
+      <section>
+        <h2
+          class="text-2xl font-semibold mb-2"
+          style="color: <%= data.color %>"
+        >
+          About Us
+        </h2>
+        <p class="text-lg"><%= data.about %></p>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold mb-2" style="color: <%= data.color %>">
+          Services
+        </h2>
+        <ul class="list-disc list-inside space-y-1">
+          <% data.services.forEach(service => { %>
+          <li><%= service %></li>
+          <% }) %>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold mb-2" style="color: <%= data.color %>">
+          Contact
+        </h2>
+        <p>
+          Email:
+          <a href="mailto:<%= data.email %>" class="underline text-blue-600"
+            ><%= data.email %></a
+          >
+        </p>
+        <p>
+          Phone:
+          <a href="tel:<%= data.phone %>" class="underline text-blue-600"
+            ><%= data.phone %></a
+          >
+        </p>
+      </section>
+
+      <% if (data.socialLinks.length) { %>
+      <section>
+        <h2 class="text-xl font-semibold mb-2" style="color: <%= data.color %>">
+          Social Media
+        </h2>
+        <ul class="list-disc list-inside">
+          <% data.socialLinks.forEach(link => { %>
+          <li>
+            <a
+              href="<%= link %>"
+              target="_blank"
+              class="text-blue-600 underline"
+              ><%= link %></a
+            >
+          </li>
+          <% }) %>
+        </ul>
+      </section>
+      <% } %> <% if (data.workImages?.length) { %>
+      <section>
+        <h2 class="text-xl font-semibold mb-4" style="color: <%= data.color %>">
+          Our Work
+        </h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <% data.workImages.forEach(img => { %>
+          <img src="<%= img %>" class="rounded shadow" />
+          <% }) %>
+        </div>
+      </section>
+      <% } %>
+    </main>
+
+    <footer class="bg-gray-100 text-center py-4 text-sm mt-12 border-t">
+      &copy; <%= new Date().getFullYear() %> <%= data.businessName %>
+    </footer>
+  </body>
+</html>
