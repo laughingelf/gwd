@@ -11,14 +11,14 @@ const Footer = () => {
                 {/* GhostStack Designs Section */}
                 <div className="w-full sm:w-1/2 lg:w-1/3 ">
                     <div className="flex justify-center">
-                        <Link onClick={() => window.scrollTo(0, 0)} to='/home'>
+                        <Link  to='/home'>
                             <img className="h-44" alt="GhostStack Designs Logo" src="/img/ghostStack.svg" />
                         </Link>
                     </div>
                     <h3 className="text-lg sm:text-xl mb-8">
                         We believe small businesses deserve more. You don’t have to be big to look big online. Your website should reflect the hard work you put in every day. Let’s build something great together that shows off your business in the best light.
                     </h3>
-                    <Link onClick={() => window.scrollTo(0, 0)}
+                    <Link 
                         id="get-started-button-bigger" 
                         to='/contact' 
                         className="px-6 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors">
@@ -30,10 +30,10 @@ const Footer = () => {
                 <div className="w-full sm:w-1/3 lg:w-1/4 mt-4">
                     <h1 className="text-2xl sm:text-3xl font-semibold mb-4">Helpful Links</h1>
                     <div className="flex flex-col space-y-2">
-                        <Link onClick={() => window.scrollTo(0, 0)} to='/home' className="text-lg sm:text-xl hover:underline">Home</Link>
-                        <Link onClick={() => window.scrollTo(0, 0)} to='/about' className="text-lg sm:text-xl hover:underline">About Us</Link>
-                        <Link onClick={() => window.scrollTo(0, 0)} to='/services' className="text-lg sm:text-xl hover:underline">Services</Link>
-                        <Link onClick={() => window.scrollTo(0, 0)} to='/contact' className="text-lg sm:text-xl hover:underline">Contact Us</Link>
+                        <Link  to='/home' className="text-lg sm:text-xl hover:underline">Home</Link>
+                        <Link  to='/about' className="text-lg sm:text-xl hover:underline">About Us</Link>
+                        <Link  to='/services' className="text-lg sm:text-xl hover:underline">Services</Link>
+                        <Link  to='/contact' className="text-lg sm:text-xl hover:underline">Contact Us</Link>
                     </div>
                 </div>
 

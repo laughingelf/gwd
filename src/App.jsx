@@ -8,6 +8,7 @@ import NoPage from './pages/NoPage'
 import Contact from './pages/Contact'
 import Pricing from './pages/Pricing'
 import OnePage from './pages/OnePage'
+import ScrollToTop from './components/ScrollToTop'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
 
 
       <BrowserRouter>
+      <ScrollToTop/>
         <Routes>
           <Route index element={<LandingPage/>} />
           <Route path='/home' element={<LandingPage/>} />

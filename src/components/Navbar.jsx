@@ -10,7 +10,7 @@ const Navbar = () => {
             <div className='max-w-full mx-auto flex items-center justify-between'>
                 {/* Logo */}
                 <div>
-                    <Link onClick={() => window.scrollTo(0, 0)}  to='/home' id='nav-link' className='text-xl'>
+                    <Link   to='/home' id='nav-link' className='text-xl'>
                         <img alt='small ghost stack icon' className='h-12' src='/img/ghost.svg' />
                     </Link>
                 </div>
@@ -24,16 +24,16 @@ const Navbar = () => {
 
                 {/* Nav Links - Desktop */}
                 <div className='hidden lg:flex items-center space-x-6 text-lg'>
-                    <Link onClick={() => window.scrollTo(0, 0)} to='/home' id='nav-link'>Home</Link>
-                    <Link onClick={() => window.scrollTo(0, 0)} to='/about' id='nav-link'>About Us</Link>
-                    <Link onClick={() => window.scrollTo(0, 0)} to='/services' id='nav-link'>Services</Link>
-                    <Link onClick={() => window.scrollTo(0, 0)} to='/pricing' id='nav-link'>Pricing</Link>
-                    <Link onClick={() => window.scrollTo(0, 0)} to='/contact' id='nav-link'>Contact</Link>
+                    <Link  to='/home' id='nav-link'>Home</Link>
+                    <Link  to='/about' id='nav-link'>About Us</Link>
+                    <Link  to='/services' id='nav-link'>Services</Link>
+                    <Link  to='/pricing' id='nav-link'>Pricing</Link>
+                    <Link  to='/contact' id='nav-link'>Contact</Link>
                 </div>
 
                 {/* Get Started - Desktop */}
                 <div className='hidden lg:block'>
-                    <Link onClick={() => window.scrollTo(0, 0)} to='/contact'
+                    <Link  to='/contact'
                     className='bg-[#0DB6CC] text-white px-8 py-2 rounded-2xl hover:text-lg hover:bg-white hover:text-black hover:shadow-md shadow-black transition'
                     >Get Started</Link>
                 </div>

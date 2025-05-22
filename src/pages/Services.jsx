@@ -47,7 +47,7 @@ const Services = () => {
                             <h2 id="bluetext" className="text-2xl md:text-2xl font-semibold underline">
                                 Built from Scratch – No Templates, No WordPress
                             </h2>
-                            <p className="text-lg text-left md:text-lg leading-relaxed max-w-3xl mx-auto">
+                            <p className="text-xl text-left leading-relaxed max-w-3xl mx-auto">
                                 At GhostStack Designs, we don’t cut corners with page builders or WordPress. 
                                 Every site is built from scratch with clean, custom code—no fluff, no bloat. That 
                                 means lightning-fast load times, airtight security, and a design that’s 100% yours. 
@@ -59,7 +59,7 @@ const Services = () => {
                             {/* Bottom Section */}
                             <div className="space-y-4 text-center">
                                 <h3 className="text-2xl md:text-3xl font-bold underline text-[#0DB6CC]">WHY DOES IT MATTER</h3>
-                                <ul className="list-disc list-inside space-y-2 text-lg md:text-lg max-w-md mx-auto text-left">
+                                <ul className="list-disc list-inside space-y-2 text-xl max-w-md mx-auto text-left">
                                     <li>Loads Super Fast</li>
                                     <li>Helps Turn Visitors Into Customers</li>
                                     <li>Locked-down Security</li>
@@ -72,7 +72,7 @@ const Services = () => {
                                 <h3 className="text-2xl md:text-3xl font-bold mb-4 underline text-[#0DB6CC]">
                                     A FASTER WEBSITE KEEPS USERS ENGAGED AND DRIVES MORE CONVERSIONS
                                 </h3>
-                                <p className="text-lg text-left md:text-lg leading-relaxed max-w-3xl mx-auto">
+                                <p className="text-xl text-left leading-relaxed max-w-3xl mx-auto">
                                 The internet’s crowded—and let’s be real, you need every edge you can get. While most 
                                 folks are stuck with clunky page builders that drag their site speed down, you’ve got a 
                                 chance to stand out with a custom-coded site that loads almost instantly. That matters—big 
@@ -86,13 +86,13 @@ const Services = () => {
                                 <h3 className="text-2xl md:text-3xl font-bold mb-4 underline text-[#0DB6CC]">
                                     CUSTOM-CODED SITES OFFER BETTER SECURITY
                                 </h3>
-                                <p className="text-lg text-left md:text-lg leading-relaxed max-w-3xl mx-auto mb-4">
+                                <p className="text-xl text-left leading-relaxed max-w-3xl mx-auto mb-4">
                                 WordPress and other page builders come with a lot of potential security risks, especially if you’re not 
                                 regularly updating your plugins and versions. Hackers tend to target these platforms because they’re 
                                 well-known and often have vulnerabilities, making them easier to compromise.
                                 </p>
 
-                                <p className="text-lg text-left md:text-lg leading-relaxed max-w-3xl mx-auto">
+                                <p className="text-xl text-left leading-relaxed max-w-3xl mx-auto">
                                 With our custom-coded websites, there’s nothing for hackers to exploit. We build using clean, static 
                                 HTML and CSS, which means there are no databases or server-side requests that can be intercepted. This 
                                 makes our sites far more secure and requires less maintenance. You don’t have to worry about constant 
@@ -104,13 +104,13 @@ const Services = () => {
                                 <h3 className="text-2xl md:text-3xl font-bold mb-4 underline text-[#0DB6CC]">
                                     BOOST YOUR SEARCH VISIBILITY
                                 </h3>
-                                <p className="text-lg text-left md:text-lg leading-relaxed max-w-3xl mx-auto mb-4">
+                                <p className="text-xl text-left leading-relaxed max-w-3xl mx-auto mb-4">
                                 Better load times can seriously boost your Google ranking. The main way this happens is by simply 
                                 loading faster. If two websites have similar content and authority, Google will favor the one with 
                                 better page speed and Core Web Vitals.
                                 </p>
 
-                                <p className="text-lg text-left md:text-lg leading-relaxed max-w-3xl mx-auto">
+                                <p className="text-xl text-left leading-relaxed max-w-3xl mx-auto">
                                 But there's another key factor to consider. A faster site attracts more visitors, and more visitors 
                                 means higher chances of ranking better. When we optimize your site with Google's Core Web Vitals in 
                                 mind, we’re not just speeding things up—we’re improving the overall experience. This keeps users on 
@@ -124,7 +124,7 @@ const Services = () => {
                                 <h3 className="text-2xl md:text-3xl mb-4 font-bold underline text-[#0DB6CC]">
                                     BOOST YOUR GOOGLE BUSINESS PROFILE VISIBILITY
                                 </h3>
-                                <p className="text-lg text-left md:text-lg leading-relaxed max-w-3xl mx-auto mb-4">
+                                <p className="text-xl text-left leading-relaxed max-w-3xl mx-auto mb-4">
                                 A faster website not only improves user experience but also helps give your Google Business Profile 
                                 a serious boost, making it more visible in Maps searches. Combine that with glowing 5-star reviews, 
                                 plenty of high-quality images, and a fully optimized profile, and you’ll see more leads coming in. The 
@@ -135,7 +135,7 @@ const Services = () => {
                             <div className="flex flex-row justify-center gap-6">
                                 <div>
                                     <Link
-                                    onClick={() => window.scrollTo(0, 0)}
+                                    
                                     to="/contact"
                                     className="w-40 text-center text-2xl bg-[#0DB6CC] text-white px-8 py-2 rounded-2xl hover:bg-white hover:text-black hover:shadow-md shadow-black transition"
                                     >
@@ -144,7 +144,7 @@ const Services = () => {
                                 </div>
                                 <div>
                                     <Link
-                                    onClick={() => window.scrollTo(0, 0)}
+                                    
                                     to="/contact"
                                     className="min-w-40 text-center text-2xl bg-[#0DB6CC] text-white px-12 py-2 rounded-2xl hover:bg-white hover:text-black hover:shadow-md shadow-black transition"
                                     >

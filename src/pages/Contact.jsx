@@ -15,7 +15,8 @@ const Contact = () => {
             <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
         <Navbar/>
             <div className="">
-                <div>
+            <HeroContact/>
+                <div >
                     {/* <div id="about-us-head" className="relative min-h-[20vh] flex items-center rounded-lg justify-center mb-24 text-6xl">
                         <video
                             id="background-video"
@@ -29,9 +30,9 @@ const Contact = () => {
                         </video>
                         <h1 className="relative z-10 text-white">Contact Us</h1>
                     </div> */}
-                    <HeroContact/>
+                    
                 </div>
-                <div id="contact-page">
+                <div id="contact-page" className="mt-10">
                     <div id="contact-info">
                         <div className="w-full text-left lg:w-1/2 space-y-6">
                                 {/* <h3 id="bluetext" className="text-xl font-semibold">Contact Us</h3> */}

@@ -47,13 +47,7 @@ export default function HeroContact() {
             <h1 className="text-5xl md:text-6xl">
             Questions? Ideas? Let’s Talk.</h1>
             <p className="text-xl">
-              Need help getting your business online?{" "}
-              <Link
-                to="/contact"
-                className="underline text-green-600 font-semibold"
-              >
-                Let’s talk.
-              </Link>
+            Let’s get your business online today — the right way.
             </p>
           </div>
 

@@ -106,7 +106,7 @@ const About = () => {
                         a web design company—it’s a way to give the little guy a fighting chance in a world built for big players. Let’s build something that works
                         just as hard as you do.
                         </p>
-                        <Link onClick={() => window.scrollTo(0, 0)} id="get-started-button-bigger" to='/contact'>Call Us Today</Link>
+                        <Link  id="get-started-button-bigger" to='/contact'>Call Us Today</Link>
                     </div>
                 </div>
 

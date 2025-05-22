@@ -25,7 +25,7 @@ const Website = () => {
                         </div>
                         <div className="mt-4 sm:mt-0">
                             <Link
-                                onClick={() => window.scrollTo(0, 0)}
+                                
                                 id="get-started-button-bigger"
                                 to="/contact"
                                 className="text-lg sm:text-xl bg-blue-500 text-white px-6 py-3 rounded-lg transition duration-300 hover:bg-blue-600"

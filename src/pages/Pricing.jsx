@@ -88,7 +88,7 @@ const Pricing = () => {
                                 <h1 className="mr-2 text-4xl sm:text-5xl">$900</h1>
                                 <h3 className="text-sm sm:text-lg">+$25/mo Hosting-taxes included</h3>
                             </div>
-                            <Link onClick={() => window.scrollTo(0, 0)} id="get-started-button-glow" to='/contact' className="block text-center mt-4">Get Started</Link>
+                            <Link  id="get-started-button-glow" to='/contact' className="block text-center mt-4">Get Started</Link>
                         </div>
                     </div>
 
@@ -130,7 +130,7 @@ const Pricing = () => {
                                 <h1 className="mr-2 text-4xl sm:text-5xl">$175</h1>
                                 <h3 className="text-sm sm:text-lg">Per Month-taxes included</h3>
                             </div>
-                            <Link onClick={() => window.scrollTo(0, 0)} id="get-started-button-glow" to='/contact' className="block text-center mt-4">Get Started</Link>
+                            <Link  id="get-started-button-glow" to='/contact' className="block text-center mt-4">Get Started</Link>
                         </div>
                     </div>
                     {/* Ecommerce */}
@@ -171,7 +171,7 @@ const Pricing = () => {
                                 <h1 className="mr-2 text-4xl sm:text-5xl">$2500</h1>
                                 <h3 className="text-sm sm:text-lg"><span className="underline">starting</span>-taxes included</h3>
                             </div>
-                            <Link onClick={() => window.scrollTo(0, 0)} id="get-started-button-glow" to='/contact' className="block text-center mt-4">Get Started</Link>
+                            <Link  id="get-started-button-glow" to='/contact' className="block text-center mt-4">Get Started</Link>
                         </div>
                     </div>
                     {/* flat Rate  */}
@@ -214,7 +214,7 @@ const Pricing = () => {
                                 <h1 className="mr-2 text-4xl sm:text-5xl">$50</h1>
                                 <h3 className="text-sm sm:text-lg">each-taxes included</h3>
                             </div> */}
-                            <Link onClick={() => window.scrollTo(0, 0)} id="get-started-button-glow" to='/contact' className="block text-center mt-4">Get Started</Link>
+                            <Link  id="get-started-button-glow" to='/contact' className="block text-center mt-4">Get Started</Link>
                         </div>
                     </div>
                 </div>
