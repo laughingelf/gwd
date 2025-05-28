@@ -5,22 +5,14 @@ export const generateSite = async (formDataToSend) => {
       body: formDataToSend,
     });
 
-    const text = await res.text(); // 👈 get raw response
-
-    let data;
-    try {
-      data = JSON.parse(text);
-    } catch (e) {
-      console.error("Server returned non-JSON:", text);
-      throw new Error("Server returned invalid JSON");
-    }
-
     if (!res.ok) {
-      console.error("Server error:", data);
+      const errorText = await res.text();
+      console.error("Server error:", errorText);
       return "";
     }
 
-    return data.html;
+    const html = await res.text(); // ✅ Treat response as raw HTML
+    return html;
   } catch (err) {
     console.error("Fetch failed:", err);
     return "";
