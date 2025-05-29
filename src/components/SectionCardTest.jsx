@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const SectionCard = ({ section, onUpdate }) => {
   const { type, content } = section;
-  const [isExpanded, setIsExpanded] = useState(false);
+  cnst [isExpanded, setIsExpanded] = useState(true);o
 
   const handleImageChange = (e) => {
     const file = e.target.files[0];
@@ -64,7 +64,7 @@ const SectionCard = ({ section, onUpdate }) => {
                         reader.readAsDataURL(file);
                       }
                     }}
-                    className="w-full max-w-sm mx-auto translate-x-23 md:translate-x-30"
+                    className="w-full max-w-sm mx-auto"
                   />
                   {content.logo && (
                     <img
@@ -124,7 +124,7 @@ const SectionCard = ({ section, onUpdate }) => {
                           reader.readAsDataURL(file);
                         }
                       }}
-                      className="w-full max-w-sm mx-auto translate-x-23 md:translate-x-30"
+                      className="w-full max-w-sm mx-auto"
                     />
                     {content.image && (
                       <img
@@ -243,7 +243,7 @@ const SectionCard = ({ section, onUpdate }) => {
                         onChange={(e) => onUpdate({ text: e.target.value })}
                     />
                     <label className="block mt-2 font-medium">Image (optional)</label>
-                    <input type="file" accept="image/*" onChange={handleImageChange} className="w-full max-w-sm mx-auto translate-x-23 md:translate-x-30" />
+                    <input type="file" accept="image/*" onChange={handleImageChange} />
                     {content.image && (
                         <div className="mt-2">
                         <img
@@ -350,9 +350,7 @@ const SectionCard = ({ section, onUpdate }) => {
             <div className="space-y-4">
                 {type === "gallery" && (
                     <>
-                    <label className="block mt-2 font-medium">Add Images</label>
                     <input
-                        className="w-full max-w-sm mx-auto translate-x-23 md:translate-x-30"
                         type="file"
                         multiple
                         accept="image/*"
