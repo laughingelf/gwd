@@ -57,30 +57,24 @@ exports.handler = async (event, context) => {
           const enrichedSections = formData.sections.map((section, idx) => {
             const enriched = { ...section };
 
-            // Handle hero background image
             if (files[`sectionImage_${idx}`]) {
               enriched.content.image = files[`sectionImage_${idx}`];
             }
 
-            // Handle uploaded logo for hero
             if (section.type === "hero" && files[`logo_${idx}`]) {
               enriched.content.logo = files[`logo_${idx}`];
             }
 
-            // Handle gallery images
             if (section.type === "gallery") {
               enriched.content.images = Object.keys(files)
                 .filter((key) => key.startsWith(`gallery_${idx}_`))
                 .map((key) => files[key]);
             }
 
-            // ✅ Handle service images
             if (section.type === "services" && Array.isArray(section.content.services)) {
               enriched.content.services = section.content.services.map((service, sIdx) => {
                 const imageKey = `serviceImage_${idx}_${sIdx}`;
                 const imageData = files[imageKey] || null;
-
-                console.log(`Service ${sIdx} image key: ${imageKey}`, imageData ? "✅ exists" : "❌ missing");
 
                 return {
                   ...service,
@@ -89,31 +83,31 @@ exports.handler = async (event, context) => {
               });
             }
 
-
             return enriched;
           });
 
+          // ✅ Declare html here in the outer try block
+          let html;
 
+          try {
+            html = ejs.render(template, {
+              sections: enrichedSections,
+              headingFont: formData.headingFont || "Inter",
+              paragraphFont: formData.paragraphFont || "Inter",
+              encodedHeadingFont: encodeURIComponent(formData.headingFont || "Inter"),
+              encodedParagraphFont: encodeURIComponent(formData.paragraphFont || "Inter"),
+              backgroundColor: formData.backgroundColor || "#ffffff",
+              textColor: formData.textColor || "#000000",
+            });
+          } catch (err) {
+            console.error("EJS Rendering Error:", err);
+            return resolve({
+              statusCode: 500,
+              body: JSON.stringify({ error: "Template rendering failed", details: err.message }),
+            });
+          }
 
-          // console.log("Rendering template with data:", {
-          //   headingFont: formData.headingFont,
-          //   paragraphFont: formData.paragraphFont,
-          //   sections: enrichedSections
-          // });
-
-        const html = ejs.render(template, {
-          sections: enrichedSections,
-          headingFont: formData.headingFont || "Inter",
-          paragraphFont: formData.paragraphFont || "Inter",
-          encodedHeadingFont: encodeURIComponent(formData.headingFont || "Inter"),
-          encodedParagraphFont: encodeURIComponent(formData.paragraphFont || "Inter"),
-          backgroundColor: formData.backgroundColor || "#ffffff",
-          textColor: formData.textColor || "#000000"
-        });
-
-
-
-
+          // ✅ This will now work
           resolve({
             statusCode: 200,
             body: html,
@@ -126,6 +120,7 @@ exports.handler = async (event, context) => {
           });
         }
       });
+
 
       busboy.end(Buffer.from(event.body, "base64"));
     });
