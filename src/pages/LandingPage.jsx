@@ -38,11 +38,14 @@ const LandingPage = () => {
                 media="(max-width: 767px)"
                 />
                 {/* Default image */}
-                <img
+               <img
                 src="/img/GhostStack360.png"
+                srcSet="/img/GhostStack360-lg.png 768w, /img/GhostStack360.png 480w"
+                sizes="(min-width: 768px) 60vw, 90vw"
                 alt="GhostStack Logo"
-                className="w-auto h-auto md:h-[60vh]"
+                className="max-w-full h-auto md:h-[60vh]"
                 />
+
             </picture>
             </div>
 
