@@ -41,7 +41,7 @@ const LandingPage = () => {
                 <img
                 src="/img/GhostStack360.png"
                 alt="GhostStack Logo"
-                className="w-auto md:h-[60vh]"
+                className="w-auto h-auto md:h-[60vh]"
                 />
             </picture>
             </div>
