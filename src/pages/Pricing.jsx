@@ -50,118 +50,168 @@ const Pricing = () => {
             </section>
 
             <div className="flex flex-wrap justify-center items-center px-4">
-                    {/* Lump Sum Card */}
-                    <div id="price-card" className="w-full sm:w-80 mt-8 sm:mx-4 border p-4 rounded-xl mb-8 sm:mb-0">
-                        <h1 id="bluetext" className="text-3xl sm:text-4xl mb-4 font-semibold underline text-center">LUMP SUM</h1>
-                        <div>
-                            <div id="pricing-card" className="flex items-center justify-between mb-2 text-sm sm:text-lg">
-                                <h5>Design And Development</h5>
-                                <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" />
-                            </div>
-                            <div id="pricing-card" className="flex items-center justify-between mb-2 text-sm sm:text-lg">
-                                <h5>$25/mo Hosting</h5>
-                                <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" />
-                            </div>
-                            <div id="pricing-card" className="flex items-center justify-between mb-2 text-sm sm:text-lg">
-                                <h5>$75 fee Per Page after 5</h5>
-                                <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" />
-                            </div>
-                            <div id="pricing-card" className="flex items-center justify-between mb-2 text-sm sm:text-lg">
-                                <h5>$50/Month Flat Rate Content Edits</h5>
-                                <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" />
-                            </div>
-                            <div id="pricing-card" className="flex items-center justify-between mb-2 text-sm sm:text-lg">
-                                <h5>$250 To Add A Blog</h5>
-                                <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" />
-                            </div>
-                            <div id="pricing-card" className="flex items-center justify-between mb-2 text-sm sm:text-lg">
-                                <h5>24/7 Support</h5>
-                                <img alt="white no icon" className="h-6 sm:h-7" src="/img/icons/nohelp.svg" />
-                            </div>
-                            <div id="pricing-card" className="flex items-center justify-between mb-2 text-sm sm:text-lg">
-                                <h5>Lifetime Updates</h5>
-                                <img alt="white no icon" className="h-6 sm:h-7" src="/img/icons/nohelp.svg" />
-                            </div>
+                    {/* Tier 1 Card */}
+                    <div id="price-card" className="w-full sm:w-100 mt-8 sm:mx-4 border p-4 rounded-xl mb-8 sm:mb-0">
+                    <h1 id="bluetext" className="text-3xl sm:text-4xl mb-4 font-semibold underline text-center">Starter Plan</h1>
+                    <div>
+                        <div id="pricing-card" className="flex items-center justify-between mb-2 text-xl md:text-2xl">
+                        <h5>Template Based Starter-Site</h5>
+                        <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" />
                         </div>
-                        <div className="mt-4">
-                            <div className="mb-4 flex justify-center items-end">
-                                <h1 className="mr-2 text-4xl sm:text-5xl">$900</h1>
-                                <h3 className="text-sm sm:text-lg">+$25/mo Hosting-taxes included</h3>
-                            </div>
-                            <Link  id="get-started-button-glow" to='/contact' className="block text-center mt-4">Get Started</Link>
+                        <div id="pricing-card" className="flex items-center justify-between mb-2 text-xl md:text-2xl">
+                        <h5>1-3 Pages Included</h5>
+                        <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" />
                         </div>
+                        <div id="pricing-card" className="flex items-center justify-between mb-2 text-xl md:text-2xl">
+                        <h5>Basic Contact Form</h5>
+                        <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" />
+                        </div>
+                        <div id="pricing-card" className="flex items-center justify-between mb-2 text-xl md:text-2xl">
+                        <h5>Mobile-Responsive</h5>
+                        <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" />
+                        </div>
+                        <div id="pricing-card" className="flex items-center justify-between mb-2 text-xl md:text-2xl">
+                        <h5>Hosting: $25/mo</h5>
+                        <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" />
+                        </div>
+                        <div id="pricing-card" className="flex items-center justify-between mb-2 text-xl md:text-2xl">
+                        <h5>Basic SEO Setup</h5>
+                        <img alt="white no icon" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" />
+                        </div>
+                        <div id="pricing-card" className="flex items-center justify-between mb-2 text-xl md:text-2xl">
+                        <h5>Email Support</h5>
+                        <img alt="white no icon" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" />
+                        </div>
+                    </div>
+                    <div className="mt-4">
+                        <div className="mb-4 flex justify-center items-end">
+                        <h1 className="mr-2 text-4xl sm:text-5xl">$300</h1>
+                        <h3 className="text-sm sm:text-lg">+$25/mo Hosting-taxes included</h3>
+                        </div>
+                        <Link id="get-started-button-glow" to="/contact" className="block text-center mt-4">
+                        Get Started
+                        </Link>
+                    </div>
                     </div>
 
-                    {/* Monthly Card */}
-                    <div id="price-card" className="w-full sm:w-80 mt-8 sm:mx-4 border p-4 rounded-xl">
-                        <h1 id="bluetext" className="text-3xl sm:text-4xl mb-4 font-semibold underline text-center">MONTHLY</h1>
+                    {/* Lump Sum Card */}
+                    <div id="price-card" className="w-full sm:w-100 mt-8 sm:mx-4 border p-4 rounded-xl mb-8 sm:mb-0">
+                        <h1 id="bluetext" className="text-3xl sm:text-4xl mb-4 font-semibold underline text-center">Pro Plan</h1>
                         <div>
-                            <div id="pricing-card" className="flex items-center justify-between mb-2 text-sm sm:text-lg">
-                                <h5>Design And Development</h5>
-                                <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" />
+                            <div id="pricing-card" className="flex items-center justify-between mb-2 text-xl md:text-2xl">
+                            <h5>Design & Development</h5>
+                            <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" />
                             </div>
-                            <div id="pricing-card" className="flex items-center justify-between mb-2 text-sm sm:text-lg">
-                                <h5>$Includes Hosting</h5>
-                                <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" />
+                            <div id="pricing-card" className="flex items-center justify-between mb-2 text-xl md:text-2xl">
+                            <h5>Hosting: $25/mo</h5>
+                            <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" />
                             </div>
-                            <div id="pricing-card" className="flex items-center justify-between mb-2 text-sm sm:text-lg">
-                                <h5>$75 fee Per Page after 5</h5>
-                                <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" />
+                            <div id="pricing-card" className="flex items-center justify-between mb-2 text-xl md:text-2xl">
+                            <h5>5 Pages Included ($75/page after 5)</h5>
+                            <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" />
                             </div>
-                            <div id="pricing-card" className="flex items-center justify-between mb-2 text-sm sm:text-lg">
-                                <h5>Unlimited Edits</h5>
-                                <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" />
+                            <div id="pricing-card" className="flex items-center justify-between mb-2 text-xl md:text-2xl">
+                            <h5>Flat Rate Content Edits: $50/mo</h5>
+                            <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" />
                             </div>
-                            <div id="pricing-card" className="flex items-center justify-between mb-2 text-sm sm:text-lg">
-                                <h5>$250 To Add A Blog</h5>
-                                <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" />
+                            <div id="pricing-card" className="flex items-center justify-between mb-2 text-xl md:text-2xl">
+                            <h5>Optional Blog: $250</h5>
+                            <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" />
                             </div>
-                            <div id="pricing-card" className="flex items-center justify-between mb-2 text-sm sm:text-lg">
-                                <h5>24/7 Support</h5>
-                                <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" />
+                            <div id="pricing-card" className="flex items-center justify-between mb-2 text-xl md:text-2xl">
+                            <h5>24/7 Support</h5>
+                            <img alt="white no icon" className="h-6 sm:h-7" src="/img/icons/nohelp.svg" />
                             </div>
-                            <div id="pricing-card" className="flex items-center justify-between mb-2 text-sm sm:text-lg">
-                                <h5>Lifetime Updates</h5>
-                                <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" />
+                            <div id="pricing-card" className="flex items-center justify-between mb-2 text-xl md:text-2xl">
+                            <h5>Lifetime Updates</h5>
+                            <img alt="white no icon" className="h-6 sm:h-7" src="/img/icons/nohelp.svg" />
                             </div>
                         </div>
                         <div className="mt-4">
                             <div className="mb-4 flex justify-center items-end">
-                                <h1 className="mr-2 text-4xl sm:text-5xl">$175</h1>
-                                <h3 className="text-sm sm:text-lg">Per Month-taxes included</h3>
+                            <h1 className="mr-2 text-4xl sm:text-5xl">$900</h1>
+                            <h3 className="text-sm sm:text-lg">+ $25/mo Hosting - taxes included</h3>
                             </div>
-                            <Link  id="get-started-button-glow" to='/contact' className="block text-center mt-4">Get Started</Link>
+                            <Link id="get-started-button-glow" to='/contact' className="block text-center mt-4">
+                            Get Started
+                            </Link>
+                        </div>
+                        </div>
+
+
+                    {/* Monthly Card */}
+                    <div id="price-card" className="w-full sm:w-100 mt-8 sm:mx-4 border p-4 rounded-xl">
+                        <h1 id="bluetext" className="text-3xl sm:text-4xl mb-4 font-semibold underline text-center">MONTHLY</h1>
+                        <div>
+                        <div id="pricing-card" className="flex items-center justify-between mb-2 text-xl md:text-2xl">
+                        <h5>Design & Development</h5>
+                        <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" />
+                        </div>
+                        <div id="pricing-card" className="flex items-center justify-between mb-2 text-xl md:text-2xl">
+                        <h5>Hosting Included</h5>
+                        <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" />
+                        </div>
+                        <div id="pricing-card" className="flex items-center justify-between mb-2 text-xl md:text-2xl">
+                        <h5>5 Pages Included ($75/page after 5)</h5>
+                        <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" />
+                        </div>
+                        <div id="pricing-card" className="flex items-center justify-between mb-2 text-xl md:text-2xl">
+                        <h5>Unlimited Edits</h5>
+                        <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" />
+                        </div>
+                        <div id="pricing-card" className="flex items-center justify-between mb-2 text-xl md:text-2xl">
+                        <h5>Optional Blog: $250</h5>
+                        <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" />
+                        </div>
+                        <div id="pricing-card" className="flex items-center justify-between mb-2 text-xl md:text-2xl">
+                        <h5>24/7 Support</h5>
+                        <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" />
+                        </div>
+                        <div id="pricing-card" className="flex items-center justify-between mb-2 text-xl md:text-2xl">
+                        <h5>Lifetime Updates</h5>
+                        <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" />
                         </div>
                     </div>
+                    <div className="mt-4">
+                        <div className="mb-4 flex justify-center items-end">
+                        <h1 className="mr-2 text-4xl sm:text-5xl">$175</h1>
+                        <h3 className="text-sm sm:text-lg">Per Month - taxes included</h3>
+                        </div>
+                        <Link id="get-started-button-glow" to='/contact' className="block text-center mt-4">
+                        Get Started
+                        </Link>
+                    </div>
+                    </div>
+
                     {/* Ecommerce */}
-                    <div id="price-card" className="w-full sm:w-80 mt-8 sm:mx-4 border p-4 rounded-xl mb-8 sm:mb-0">
+                    <div id="price-card" className="w-full sm:w-100 mt-8 sm:mx-4 border p-4 rounded-xl mb-8 sm:mb-0">
                         <h1 id="bluetext" className="text-3xl sm:text-4xl mb-4 font-semibold underline text-center">E-Commerce</h1>
                         <div>
-                            <div id="pricing-card" className="flex items-center justify-between mb-2 text-sm sm:text-lg">
+                            <div id="pricing-card" className="flex items-center justify-between mb-2 text-xl md:text-2xl">
                                 <h5>Custom E-commerce Store Design</h5>
                                 <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" />
                             </div>
-                            <div id="pricing-card" className="flex items-center justify-between mb-2 text-sm sm:text-lg">
+                            <div id="pricing-card" className="flex items-center justify-between mb-2 text-xl md:text-2xl">
                                 <h5>Customizable E-commerce Solutions</h5>
                                 <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" />
                             </div>
-                            <div id="pricing-card" className="flex items-center justify-between mb-2 text-sm sm:text-lg">
+                            <div id="pricing-card" className="flex items-center justify-between mb-2 text-xl md:text-2xl">
                                 <h5>$25/mo Hosting</h5>
                                 <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" />
                             </div>
-                            <div id="pricing-card" className="flex items-center justify-between mb-2 text-sm sm:text-lg">
+                            <div id="pricing-card" className="flex items-center justify-between mb-2 text-xl md:text-2xl">
                                 <h5>Easy Product Management</h5>
                                 <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" />
                             </div>
-                            <div id="pricing-card" className="flex items-center justify-between mb-2 text-sm sm:text-lg">
+                            <div id="pricing-card" className="flex items-center justify-between mb-2 text-xl md:text-2xl">
                                 <h5>Secure Payment Integration</h5>
                                 <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" />
                             </div>
-                            <div id="pricing-card" className="flex items-center justify-between mb-2 text-sm sm:text-lg">
+                            <div id="pricing-card" className="flex items-center justify-between mb-2 text-xl md:text-2xl">
                                 <h5>24/7 Support</h5>
                                 <img alt="white no icon" className="h-6 sm:h-7" src="/img/icons/nohelp.svg" />
                             </div>
-                            <div id="pricing-card" className="flex items-center justify-between mb-2 text-sm sm:text-lg">
+                            <div id="pricing-card" className="flex items-center justify-between mb-2 text-xl md:text-2xl">
                                 <h5>Lifetime Updates</h5>
                                 <img alt="white no icon" className="h-6 sm:h-7" src="/img/icons/nohelp.svg" />
                             </div>
@@ -175,35 +225,35 @@ const Pricing = () => {
                         </div>
                     </div>
                     {/* flat Rate  */}
-                    <div id="price-card" className="w-full sm:w-80 mt-8 sm:mx-4 border p-4 rounded-xl mb-8 sm:mb-0">
+                    <div id="price-card" className="w-full sm:w-100 mt-8 sm:mx-4 border p-4 rounded-xl mb-8 sm:mb-0">
                         <h1 id="bluetext" className="text-3xl sm:text-4xl mb-4 font-semibold underline text-center">Flat Rate Services</h1>
                         <div>
-                            <div id="pricing-card" className="flex items-center justify-between mb-2 text-sm sm:text-lg">
+                            <div id="pricing-card" className="flex items-center justify-between mb-2 text-xl md:text-2xl">
                                 <h5>Google My Business Creation</h5>
                                 {/* <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" /> */}
                                 <p className="text-xl">$50</p>
                             </div>
-                            <div id="pricing-card" className="flex items-center justify-between mb-2 text-sm sm:text-lg">
+                            <div id="pricing-card" className="flex items-center justify-between mb-2 text-xl md:text-2xl">
                                 <h5>Single Page Portfolio-$10/mo Hosting</h5>
                                 {/* <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" /> */}
                                 <p className="text-xl">$150</p>
                             </div>
-                            <div id="pricing-card" className="flex items-center justify-between mb-2 text-sm sm:text-lg">
+                            <div id="pricing-card" className="flex items-center justify-between mb-2 text-xl md:text-2xl">
                                 <h5>Single Page Website-$10/mo Hosting</h5>
                                 {/* <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" /> */}
                                 <p className="text-xl">$150</p>
                             </div>
-                            <div id="pricing-card" className="flex items-center justify-between mb-2 text-sm sm:text-lg">
+                            <div id="pricing-card" className="flex items-center justify-between mb-2 text-xl md:text-2xl">
                                 <h5>Basic SEO Setup</h5>
                                 {/* <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" /> */}
                                 <p className="text-xl">$50</p>
                             </div>
-                            <div id="pricing-card" className="flex items-center justify-between mb-2 text-sm sm:text-lg">
+                            <div id="pricing-card" className="flex items-center justify-between mb-2 text-xl md:text-2xl">
                                 <h5>Social Media Account Setup</h5>
                                 {/* <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" /> */}
                                 <p className="text-xl">$50</p>
                             </div>
-                            <div id="pricing-card" className="flex items-center justify-between mb-2 text-sm sm:text-lg">
+                            <div id="pricing-card" className="flex items-center justify-between mb-2 text-xl md:text-2xl">
                                 <h5>Domain Setup</h5>
                                 {/* <img alt="white check mark" className="h-6 sm:h-7" src="/img/icons/checkmark-white.svg" /> */}
                                 <p className="text-xl">$50</p>
