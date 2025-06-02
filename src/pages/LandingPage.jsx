@@ -3,14 +3,13 @@ import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 import Website from "../components/Website";
 import FeaturedProjects from "../components/FeaturedSites";
-import CrappyLanindgPage from "../components/forum";
+
 
 const LandingPage = () => {
 
     return(
 
         <>
-        {/* <CrappyLanindgPage /> */}
         <Navbar/>
         <div className="">
         <div className="flex justify-center">
