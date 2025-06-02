@@ -1,15 +1,49 @@
 import { useState } from "react";
+import imageCompression from 'browser-image-compression';
+import heic2any from "heic2any";
 
 const SectionCard = ({ section, onUpdate }) => {
   const { type, content } = section;
   const [isExpanded, setIsExpanded] = useState(false);
 
-  const handleImageChange = (e) => {
-    const file = e.target.files[0];
-    if (file) {
-      onUpdate({ image: file });
+  
+
+const handleImageChange = async (e) => {
+  const file = e.target.files[0];
+  if (!file) return;
+
+  try {
+    let compressedFile = file;
+
+    if (file.type === "image/heic" || file.type === "image/heif") {
+      const convertedBlob = await heic2any({ blob: file, toType: "image/jpeg", quality: 0.8 });
+      compressedFile = new File([convertedBlob], file.name.replace(/\.[^/.]+$/, ".jpg"), {
+        type: "image/jpeg"
+      });
     }
-  };
+
+    const options = {
+      maxSizeMB: 2,
+      maxWidthOrHeight: 1920,
+      useWebWorker: true
+    };
+
+    const finalFile = await imageCompression(compressedFile, options);
+
+    // ✅ Only run onUpdate({ services: ... }) if in services section
+    if (section.type === "services" && content.services) {
+      // This would be the case if you had an index parameter
+      // e.g., handleImageChange(e, idx)
+      // but since this is a shared handler, you need to handle it in each input’s onChange instead
+    } else {
+      onUpdate({ image: finalFile });
+    }
+  } catch (err) {
+    console.error("Image compression error:", err.message || err);
+    onUpdate({ image: file });
+  }
+};
+
 
   return (
     <div className="space-y-4 text-black border border-gray-200 rounded p-4 mb-4">
@@ -114,18 +148,40 @@ const SectionCard = ({ section, onUpdate }) => {
                     <input
                       type="file"
                       accept="image/*"
-                      onChange={(e) => {
+                      onChange={async (e) => {
                         const file = e.target.files[0];
-                        if (file) {
-                          const reader = new FileReader();
-                          reader.onloadend = () => {
-                            onUpdate({ image: reader.result });
+                        if (!file) return;
+                        try {
+                          let compressedFile = file;
+
+                          if (file.type === "image/heic" || file.type === "image/heif") {
+                            const convertedBlob = await heic2any({ blob: file, toType: "image/jpeg", quality: 0.8 });
+                            compressedFile = new File([convertedBlob], file.name.replace(/\.[^/.]+$/, ".jpg"), {
+                              type: "image/jpeg"
+                            });
+                          }
+
+                          const options = {
+                            maxSizeMB: 2,
+                            maxWidthOrHeight: 1920,
+                            useWebWorker: true
                           };
-                          reader.readAsDataURL(file);
+
+                          const finalFile = await imageCompression(compressedFile, options);
+
+                          const updated = [...(content.services || [])];
+                          updated[idx].image = finalFile;
+                          onUpdate({ services: updated });
+                        } catch (err) {
+                          console.error("Image compression error:", err.message || err);
+                          const updated = [...(content.services || [])];
+                          updated[idx].image = file;
+                          onUpdate({ services: updated });
                         }
                       }}
-                      className="w-full max-w-sm mx-auto translate-x-23 md:translate-x-30"
                     />
+
+
                     {content.image && (
                       <img
                         src={content.image}
@@ -271,78 +327,78 @@ const SectionCard = ({ section, onUpdate }) => {
           {isExpanded && (
             <div className="space-y-4">
                 {type === "services" && (
-                    <div className="space-y-4">
+                  <div className="space-y-4">
                     <h3 className="text-lg font-semibold">Services</h3>
 
-                    {content.services.map((service, idx) => (
-                    service && (
+                    {(content.services || []).map((service, idx) => (
+                      service && (
                         <div key={idx} className="border rounded p-4 space-y-2 bg-gray-50 max-w-lg mx-auto">
-                        <input
+                          <input
                             type="text"
                             placeholder="Service Title"
                             value={service.title}
                             onChange={(e) => {
-                            const updated = [...content.services];
-                            updated[idx].title = e.target.value;
-                            onUpdate({ services: updated });
+                              const updated = [...content.services];
+                              updated[idx].title = e.target.value;
+                              onUpdate({ services: updated });
                             }}
                             className="w-full border p-2 rounded"
-                        />
-                        <textarea
+                          />
+                          <textarea
                             placeholder="Service Description"
                             value={service.description}
                             onChange={(e) => {
-                            const updated = [...content.services];
-                            updated[idx].description = e.target.value;
-                            onUpdate({ services: updated });
+                              const updated = [...content.services];
+                              updated[idx].description = e.target.value;
+                              onUpdate({ services: updated });
                             }}
                             className="w-full border p-2 rounded"
-                        />
+                          />
 
-                        <input
+                          <input
                             type="file"
                             accept="image/*"
                             onChange={(e) => {
-                            const file = e.target.files[0];
-                            const updated = [...content.services];
-                            updated[idx].image = file;
-                            onUpdate({ services: updated });
+                              const file = e.target.files[0];
+                              const updated = [...content.services];
+                              updated[idx].image = file;
+                              onUpdate({ services: updated });
                             }}
-                        />
+                          />
 
-                        {service.image && (
+                          {service.image && (
                             <img
-                            src={URL.createObjectURL(service.image)}
-                            alt={`service-${idx}`}
-                            className="w-full max-h-32 object-cover rounded"
+                              src={URL.createObjectURL(service.image)}
+                              alt={`service-${idx}`}
+                              className="w-full max-h-32 object-cover rounded"
                             />
-                        )}
+                          )}
 
-                        <button
+                          <button
                             onClick={() => {
-                            const updated = content.services.filter((_, i) => i !== idx);
-                            onUpdate({ services: updated });
+                              const updated = content.services.filter((_, i) => i !== idx);
+                              onUpdate({ services: updated });
                             }}
                             className="text-red-600 text-sm underline"
-                        >
+                          >
                             Remove Service
-                        </button>
+                          </button>
                         </div>
-                    )
+                      )
                     ))}
 
-
                     <button
-                    onClick={() => {
-                        const updated = [...content.services, { title: "", description: "", image: null }];
+                      onClick={() => {
+                        const updated = [...(content.services || []), { title: "", description: "", image: null }];
                         onUpdate({ services: updated });
-                    }}
-                    className="text-blue-600 text-sm underline"
+                      }}
+                      className="text-blue-600 text-sm underline"
                     >
-                    + Add Another Service
+                      + Add Another Service
                     </button>
-                </div>
+                  </div>
                 )}
+
             </div>
           )}
 

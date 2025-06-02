@@ -39,6 +39,7 @@ exports.handler = async (event, context) => {
 
         file.on("end", () => {
           const buffer = Buffer.concat(buffers);
+          console.log(`File received: ${filename}, size: ${buffer.length} bytes`);
           files[fieldname] = `data:${mimetype};base64,${buffer.toString("base64")}`;
         });
       });

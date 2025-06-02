@@ -4,9 +4,10 @@ import { Menu, X } from 'lucide-react';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    
 
     return (
-        <nav className='w-full bg-gray-500 px-4 py-3 rounded'>
+        <nav className='w-full bg-gray-500 px-4 sticky top-0 py-3 rounded'>
             <div className='max-w-full mx-auto flex items-center justify-between'>
                 {/* Logo */}
                 <div>
