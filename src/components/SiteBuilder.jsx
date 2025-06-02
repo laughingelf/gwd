@@ -222,10 +222,10 @@ const SiteBuilder = () => {
         .map((section) => (
           <div key={section.id} className="bg-white p-4 rounded shadow border mb-4">
             <div className="text-gray-400 text-sm italic mb-2">Hero Section (Fixed Position)</div>
-            <
+            {/* <
               section={section}
               onUpdate={(content) => updateSectionContent(section.id, content)}
-            />
+            /> */}
           </div>
         ))}
 
